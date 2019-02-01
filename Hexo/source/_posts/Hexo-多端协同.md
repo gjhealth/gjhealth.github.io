@@ -2,11 +2,15 @@
 title: Hexo 多端协同
 date: 2019-02-01 13:42:37
 tags: 工具
+author: Allen
 ---
 
 ### 安装环境
 
 ~~~bash
+
+cat ~/.ssh/id_rsa.pub //copy公钥添加到github 上
+
 git clone -b Hexo  git@github.com:gjhealth/gjhealth.github.io.git
 
 cd gjhealth.github.io/Hexo
@@ -32,7 +36,7 @@ git commit -m "发布博客"
 
 git push
 
-hexo d //发布
+hexo d -g //发布
 
 //如果没有更新可以先celan 再hexo d 。浏览器会有缓存，可以清除下缓存在看下是否更新。
 hexo clean 
