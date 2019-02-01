@@ -24,6 +24,8 @@ git pull
 
 hexo new "hello world" //创建一篇博客,markdown 在/Hexo/source/_posts 路径下
 
+hexo s //本地预览
+
 git add .
 
 git commit -m "发布博客"
@@ -32,7 +34,7 @@ git push
 
 hexo d //发布
 
-//如果没有更新可以先
+//如果没有更新可以先celan 再hexo d 。浏览器会有缓存，可以清除下缓存在看下是否更新。
 hexo clean 
 
 ~~~
