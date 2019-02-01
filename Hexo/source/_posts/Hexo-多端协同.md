@@ -1,13 +1,19 @@
 ---
-title: Hexo 多端协同
+title: 《Hexo 多端协同文档》
 date: 2019-02-01 13:42:37
-tags: 工具
+tags: 
+- 工具 
+- 文档
+categories: 
+- 文档
 author: Allen
 ---
 
+
+
 ### 安装环境
 
-~~~bash
+```bash
 
 cat ~/.ssh/id_rsa.pub //copy公钥添加到github 上
 
@@ -18,11 +24,11 @@ cd gjhealth.github.io/Hexo
 npm install
 
 hexo --help
-~~~
+```
 
 ### 编写博客
 
-~~~bash
+```bash
 
 git pull
 
@@ -39,6 +45,7 @@ git push
 hexo d -g //发布
 
 //如果没有更新可以先celan 再hexo d 。浏览器会有缓存，可以清除下缓存在看下是否更新。
-hexo clean 
+hexo clean
+```
 
-~~~
+ 编辑 : Allen
