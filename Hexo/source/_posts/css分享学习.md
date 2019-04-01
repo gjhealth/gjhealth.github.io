@@ -1,12 +1,12 @@
 ---
-title: 进击的前端CSS基础
+title: CSS基础
 date: 2019-04-01 18:56:00
 tags: 
-- HTML
-categories: 
-- 前端
+- CSS
+categories: CSS
+- 前端CSS
 ---
-# CSS简介
+## CSS简介
 ## CSS 指层叠样式表 (Cascading Style Sheets)
     *选择器
     *盒模型
