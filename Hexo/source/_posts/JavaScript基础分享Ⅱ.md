@@ -3,7 +3,7 @@ title: 进击的前端开发（JavaScript基础篇二）
 date: 2019-04-01 13:28:39
 tags: 
 - HTML
-- javascript
+- JavaScript
 categories: 
 - 前端
 ---
