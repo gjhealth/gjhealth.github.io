@@ -259,6 +259,1261 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/01/高济 JSBridge 开发文档/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/gaojihealth2.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高济无线团队">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/01/高济 JSBridge 开发文档/" itemprop="url">高济 JSBridge 开发文档</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-01T14:15:30+08:00">
+                2019-04-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/文档/" itemprop="url" rel="index">
+                    <span itemprop="name">文档</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/04/01/高济 JSBridge 开发文档/" class="leancloud_visitors" data-flag-title="高济 JSBridge 开发文档">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h5 id="1-复制文本到剪切板"><a href="#1-复制文本到剪切板" class="headerlink" title="1. 复制文本到剪切板"></a>1. 复制文本到剪切板</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pasteboardJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&apos;pasteboardText&apos; : &apos;text content&apos;&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="2-打开一个新WebView窗口"><a href="#2-打开一个新WebView窗口" class="headerlink" title="2. 打开一个新WebView窗口"></a>2. 打开一个新WebView窗口</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openNewWindowJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&apos;url&apos; : &apos;https://xxxx&apos;&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="3-调用goback"><a href="#3-调用goback" class="headerlink" title="3. 调用goback"></a>3. 调用goback</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gobackJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nil</span><br></pre></td></tr></table></figure></p>
+<h5 id="4-Native-返回上一页"><a href="#4-Native-返回上一页" class="headerlink" title="4. Native 返回上一页"></a>4. Native 返回上一页</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">controllerPopJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nil</span><br></pre></td></tr></table></figure></p>
+<h5 id="5-自定义标题"><a href="#5-自定义标题" class="headerlink" title="5. 自定义标题"></a>5. 自定义标题</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">controllerPopJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&apos;titleString&apos;:&apos;title&apos;&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="6-退出登录"><a href="#6-退出登录" class="headerlink" title="6. 退出登录"></a>6. 退出登录</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">loginoutJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nil</span><br></pre></td></tr></table></figure></p>
+<h5 id="6-设置导航栏右边按钮"><a href="#6-设置导航栏右边按钮" class="headerlink" title="6. 设置导航栏右边按钮"></a>6. 设置导航栏右边按钮</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">navRightButtonTitle</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;navRightButtonTitle&quot;:&quot;保存&quot;&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="7-设置导航栏右边按钮隐藏"><a href="#7-设置导航栏右边按钮隐藏" class="headerlink" title="7. 设置导航栏右边按钮隐藏"></a>7. 设置导航栏右边按钮隐藏</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rightButtonHidenClick</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nil</span><br></pre></td></tr></table></figure></p>
+<h5 id="8-设置导航栏导航中间按钮"><a href="#8-设置导航栏导航中间按钮" class="headerlink" title="8. 设置导航栏导航中间按钮"></a>8. 设置导航栏导航中间按钮</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">navCenterButtonJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;navCenterButtonTitle&quot;:&quot;花儿大药房&quot;&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="9-设置导航栏导航中间按钮隐藏"><a href="#9-设置导航栏导航中间按钮隐藏" class="headerlink" title="9. 设置导航栏导航中间按钮隐藏"></a>9. 设置导航栏导航中间按钮隐藏</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">navCenterButtonHidenJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nil</span><br></pre></td></tr></table></figure></p>
+<h5 id="10-跳转Native业务模块"><a href="#10-跳转Native业务模块" class="headerlink" title="10. 跳转Native业务模块"></a>10. 跳转Native业务模块</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">H5PushNativeRoute</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//找native同事提供路由</span><br><span class="line">&#123;&quot;NativeRoute&quot;:&quot;gjhealth://cstore/member/memberQRCodeCard&quot;&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="11-选择地址"><a href="#11-选择地址" class="headerlink" title="11. 选择地址"></a>11. 选择地址</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">selectAddressJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nil</span><br></pre></td></tr></table></figure></p>
+<p>callback:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;logitudeString&quot; : 116.46 </span><br><span class="line">    &quot;latitudeString&quot; : 39.92 </span><br><span class="line">    &quot;addressString&quot; : 北京 </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="12-选择组织"><a href="#12-选择组织" class="headerlink" title="12. 选择组织"></a>12. 选择组织</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">selectOrgBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;selectOrgType&quot;:&quot;2&quot;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>callback:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;   &quot;orgId&quot; : xxx,</span><br><span class="line">    &quot;orgName&quot; : xxx,</span><br><span class="line">    &quot;orgType&quot; : xxx,</span><br><span class="line">    &quot;storeId&quot; : xxx,</span><br><span class="line">    &quot;userId&quot; : xxx,</span><br><span class="line">    &quot;storeName&quot; : xxx,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="13-扫一扫"><a href="#13-扫一扫" class="headerlink" title="13. 扫一扫"></a>13. 扫一扫</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">QRCodeJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;title&quot;:&quot;请扫描二维码/条形码&quot;,</span><br><span class="line">    &quot;light&quot;:true,</span><br><span class="line">    &quot;codeType&quot;:0 //0 条形码 ,1 二维码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>callback:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; @&quot;QRCodeValueString&quot; : codeString&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="14-调用图表预览"><a href="#14-调用图表预览" class="headerlink" title="14. 调用图表预览"></a>14. 调用图表预览</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">previewImageJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"> &quot;previewImageSelectIndex&quot;:&quot;0&quot;</span><br><span class="line"> &quot;previewImagesArray&quot;:[&quot;url1&quot;,&quot;url2&quot;,]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="15-保存图片到相册"><a href="#15-保存图片到相册" class="headerlink" title="15. 保存图片到相册"></a>15. 保存图片到相册</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">saveImageJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">imageBase64</span><br></pre></td></tr></table></figure></p>
+<h5 id="16-分享图片"><a href="#16-分享图片" class="headerlink" title="16. 分享图片"></a>16. 分享图片</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shareImageJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">imageBase64</span><br></pre></td></tr></table></figure></p>
+<h5 id="17-获取相册图片"><a href="#17-获取相册图片" class="headerlink" title="17. 获取相册图片"></a>17. 获取相册图片</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getImagesJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;imageCount&quot;:&quot;4&quot;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>callback:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[imageBase64,imageBase64,imageBase64,imageBase64]</span><br></pre></td></tr></table></figure></p>
+<h5 id="18-分享"><a href="#18-分享" class="headerlink" title="18. 分享"></a>18. 分享</h5><p>name：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shareJSBridge</span><br></pre></td></tr></table></figure></p>
+<p>params:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;title&quot;:&quot;iOS 分享组件&quot;,</span><br><span class="line">    &quot;description&quot;:&quot;高济医疗官网&quot;,</span><br><span class="line">    &quot;webpageUrl&quot;:&quot;http://www.gaojihealth.com&quot;,</span><br><span class="line">    &quot;thumbImageURL&quot;:&quot;https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3706507586,466188827&amp;fm=26&amp;gp=0.jpg&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/01/JavaScript基础分享Ⅱ/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/gaojihealth2.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高济无线团队">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/01/JavaScript基础分享Ⅱ/" itemprop="url">进击的前端开发（JavaScript基础篇二）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-01T13:28:39+08:00">
+                2019-04-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/04/01/JavaScript基础分享Ⅱ/" class="leancloud_visitors" data-flag-title="进击的前端开发（JavaScript基础篇二）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="进击的前端开发（JavaScript基础篇二）"><a href="#进击的前端开发（JavaScript基础篇二）" class="headerlink" title="进击的前端开发（JavaScript基础篇二）"></a>进击的前端开发（JavaScript基础篇二）</h2><h3 id="Ⅲ-函数"><a href="#Ⅲ-函数" class="headerlink" title="Ⅲ. 函数"></a>Ⅲ. 函数</h3><h3 id="Ⅳ-标准对象"><a href="#Ⅳ-标准对象" class="headerlink" title="Ⅳ. 标准对象"></a>Ⅳ. 标准对象</h3><ul>
+<li>Date</li>
+<li>RegExp</li>
+<li>JSON</li>
+</ul>
+<h3 id="Ⅴ-面向对象编程"><a href="#Ⅴ-面向对象编程" class="headerlink" title="Ⅴ. 面向对象编程"></a>Ⅴ. 面向对象编程</h3><ul>
+<li>创建对象</li>
+<li>原型继承</li>
+<li>class继承</li>
+</ul>
+<h3 id="Ⅵ-浏览器"><a href="#Ⅵ-浏览器" class="headerlink" title="Ⅵ.浏览器"></a>Ⅵ.浏览器</h3><p>由于JavaScript的出现就是为了能在浏览器中运行，所以，浏览器自然是JavaScript开发者必须要关注的。</p>
+<p>目前主流的浏览器分这么几种：</p>
+<p>IE 6~11：国内用得最多的IE浏览器，历来对W3C标准支持差。从IE10开始支持ES6标准；</p>
+<p>Chrome：Google出品的基于Webkit内核浏览器，内置了非常强悍的JavaScript引擎——V8。由于Chrome一经安装就时刻保持自升级，所以不用管它的版本，最新版早就支持ES6了；</p>
+<p>Safari：Apple的Mac系统自带的基于Webkit内核的浏览器，从OS X 10.7 Lion自带的6.1版本开始支持ES6，目前最新的OS X 10.11 El Capitan自带的Safari版本是9.x，早已支持ES6；</p>
+<p>Firefox：Mozilla自己研制的Gecko内核和JavaScript引擎OdinMonkey。早期的Firefox按版本发布，后来终于聪明地学习Chrome的做法进行自升级，时刻保持最新；</p>
+<p>移动设备上目前iOS和Android两大阵营分别主要使用Apple的Safari和Google的Chrome，由于两者都是Webkit核心，结果HTML5首先在手机上全面普及（桌面绝对是Microsoft拖了后腿），对JavaScript的标准支持也很好，最新版本均支持ES6。</p>
+<p>其他浏览器如Opera等由于市场份额太小就被自动忽略了。</p>
+<p>另外还要注意识别各种国产浏览器，如某某安全浏览器，某某旋风浏览器，它们只是做了一个壳，其核心调用的是IE，也有号称同时支持IE和Webkit的“双核”浏览器。</p>
+<p>不同的浏览器对JavaScript支持的差异主要是，有些API的接口不一样，比如AJAX，File接口。对于ES6标准，不同的浏览器对各个特性支持也不一样。</p>
+<p>在编写JavaScript的时候，就要充分考虑到浏览器的差异，尽量让同一份JavaScript代码能运行在不同的浏览器中。</p>
+<ul>
+<li><p>浏览器对象</p>
+<ul>
+<li><p>window</p>
+<p> window对象不但充当全局作用域，而且表示浏览器窗口。</p>
+<p> window对象有innerWidth和innerHeight属性，可以获取浏览器窗口的内部宽度和高度。内部宽高是指除去菜单栏、工具栏、边框等占位元素后，用于显示网页的净宽高。</p>
+<p> 对应的，还有一个outerWidth和outerHeight属性，可以获取浏览器窗口的整个宽高。</p>
+</li>
+<li><p>navigator</p>
+<p> navigator对象表示浏览器的信息，最常用的属性包括：</p>
+<p> navigator.appName：浏览器名称；<br> navigator.appVersion：浏览器版本；<br> navigator.language：浏览器设置的语言；<br> navigator.platform：操作系统类型；<br> navigator.userAgent：浏览器设定的User-Agent字符串。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">console.log(&apos;appName = &apos; + navigator.appName);</span><br><span class="line">console.log(&apos;appVersion = &apos; + navigator.appVersion);</span><br><span class="line">console.log(&apos;language = &apos; + navigator.language);</span><br><span class="line">console.log(&apos;platform = &apos; + navigator.platform);</span><br><span class="line">console.log(&apos;userAgent = &apos; + navigator.userAgent);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>screen</p>
+<p> screen对象表示屏幕的信息，常用的属性有：</p>
+<p> screen.width：屏幕宽度，以像素为单位；</p>
+<p> screen.height：屏幕高度，以像素为单位；</p>
+<p> screen.colorDepth：返回颜色位数，如8、16、24。</p>
+</li>
+<li><p>location</p>
+<p> location对象表示当前页面的URL信息。例如，一个完整的URL：<br> <code>http://www.example.com:8080/path/index.html?a=1&amp;b=2#TOP</code><br> 可以用location.href获取。要获得URL各个部分的值，可以这么写：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">location.protocol; // &apos;http&apos;</span><br><span class="line">location.host; // &apos;www.example.com&apos;</span><br><span class="line">location.port; // &apos;8080&apos;</span><br><span class="line">location.pathname; // &apos;/path/index.html&apos;</span><br><span class="line">location.search; // &apos;?a=1&amp;b=2&apos;</span><br><span class="line">location.hash; // &apos;TOP&apos;</span><br></pre></td></tr></table></figure>
+<p> 要加载一个新页面，可以调用location.assign()。如果要重新加载当前页面，调用location.reload()方法非常方便。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">      if (confirm(&apos;重新加载当前页&apos; + location.href + &apos;?&apos;)) &#123;</span><br><span class="line">    location.reload();</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    location.assign(&apos;/&apos;); // 设置一个新的URL地址</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> document对象表示当前页面。由于HTML在浏览器中以DOM形式表示为树形结构，document对象就是整个DOM树的根节点。</p>
+<p> document的title属性是从HTML文档中的<title>xxx</title>读取的，但是可以动态改变：<br> <code>document.title = &#39;努力学习JavaScript!&#39;;//运行后观察浏览器窗口标题变化</code></p>
+<p> 要查找DOM树的某个节点，需要从document对象开始查找。最常用的查找是根据ID和Tag Name。<br> 我们先准备HTML数据：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">      &lt;dl id=&quot;drink-menu&quot; style=&quot;border:solid 1px #ccc;padding:6px;&quot;&gt;</span><br><span class="line">    &lt;dt&gt;摩卡&lt;/dt&gt;</span><br><span class="line">    &lt;dd&gt;热摩卡咖啡&lt;/dd&gt;</span><br><span class="line">    &lt;dt&gt;酸奶&lt;/dt&gt;</span><br><span class="line">    &lt;dd&gt;北京老酸奶&lt;/dd&gt;</span><br><span class="line">    &lt;dt&gt;果汁&lt;/dt&gt;</span><br><span class="line">    &lt;dd&gt;鲜榨苹果汁&lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure>
+<p> 用document对象提供的getElementById()和getElementsByTagName()可以按ID获得一个DOM节点和按Tag名称获得一组DOM节点：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">    var menu = document.getElementById(&apos;drink-menu&apos;);</span><br><span class="line">    var drinks = document.getElementsByTagName(&apos;dt&apos;);</span><br><span class="line">    var i, s, menu, drinks;</span><br><span class="line"></span><br><span class="line">menu = document.getElementById(&apos;drink-menu&apos;);</span><br><span class="line">menu.tagName; // &apos;DL&apos;</span><br><span class="line"></span><br><span class="line">drinks = document.getElementsByTagName(&apos;dt&apos;);</span><br><span class="line">s = &apos;提供的饮料有:&apos;;</span><br><span class="line">for (i=0; i&lt;drinks.length; i++) &#123;</span><br><span class="line">    s = s + drinks[i].innerHTML + &apos;,&apos;;</span><br><span class="line">&#125;</span><br><span class="line">console.log(s);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>document</li>
+<li>history<ul>
+<li>操作DOM</li>
+</ul>
+</li>
+<li>更新DOM</li>
+<li>插入DOM</li>
+<li>删除DOM<ul>
+<li>操作表单</li>
+<li>操作文件</li>
+<li>AJAX</li>
+<li>Promise</li>
+<li>Canvas</li>
+</ul>
+</li>
+</ul>
+<h3 id="Ⅶ-jQuery"><a href="#Ⅶ-jQuery" class="headerlink" title="Ⅶ jQuery"></a>Ⅶ jQuery</h3><h3 id="Ⅷ-错误处理"><a href="#Ⅷ-错误处理" class="headerlink" title="Ⅷ 错误处理"></a>Ⅷ 错误处理</h3><h3 id="Ⅸ-underscore"><a href="#Ⅸ-underscore" class="headerlink" title="Ⅸ underscore"></a>Ⅸ underscore</h3><h3 id="Ⅹ-Node-js"><a href="#Ⅹ-Node-js" class="headerlink" title="Ⅹ Node.js"></a>Ⅹ Node.js</h3><h3 id="ⅩⅠ-React"><a href="#ⅩⅠ-React" class="headerlink" title="ⅩⅠ React"></a>ⅩⅠ React</h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/01/html5 canvas分享/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/gaojihealth2.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高济无线团队">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/01/html5 canvas分享/" itemprop="url">进击的前端开发（HTML5 动画介绍）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-01T13:28:39+08:00">
+                2019-04-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/04/01/html5 canvas分享/" class="leancloud_visitors" data-flag-title="进击的前端开发（HTML5 动画介绍）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="HTML5-动画介绍"><a href="#HTML5-动画介绍" class="headerlink" title="HTML5 动画介绍"></a>HTML5 动画介绍</h2><h4 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h4><p>在 Web 开发中，经常需要实现各种动画效果，例如：移动、变形、透明度变化等，今天我们主要来讨论各种移动的实现。<br>在html5中常用的实现动画的方式主要有：Canvas，SVG Animation和CSS Transform,今天我们主要介绍的是Canvas</p>
+<h3 id="Canvas"><a href="#Canvas" class="headerlink" title="Canvas"></a>Canvas</h3><h4 id="2-Canvas简介"><a href="#2-Canvas简介" class="headerlink" title="2.Canvas简介"></a>2.Canvas简介</h4><p>canvas是html5提供的一个新的功能！至于作用，就是一个画布。然后画笔就是javascript。canvas的用途非常的广，特别是html5游戏以及数据可视化这两个方面，可以不用太厉害，但是必须要会基础的用法。但是以后对canvas的需求，肯定会越来越大。所以canvas很值得学习，而且学好canvas,就是很好的一个加分项。不过,‘&lt;’canvas’&gt;’元素本身并没有绘制能力（它仅仅是图形的容器),必须使用脚本来完成实际的绘图任务。getContext() 方法可返回一个对象，该对象提供了用于在画布上绘图的方法和属性。</p>
+<h4 id="3-常用函数"><a href="#3-常用函数" class="headerlink" title="3.常用函数"></a>3.常用函数</h4><h5 id="3-1基础函数"><a href="#3-1基础函数" class="headerlink" title="3.1基础函数"></a>3.1基础函数</h5><p>context.moveTo(x,y)<br>把画笔移动到x,y坐标，建立新的子路径。</p>
+<p>context.lineTo(x,y)<br>建立上一个点到x,y坐标的直线，如果没有上一个点，则等同moveTo(x,y)，把（x,y）添加到子路径中。</p>
+<p>context.stroke()<br>描绘子路径.</p>
+<p>beginPath()<br>清空子路径，一般用于开始路径的创建。在几次循环地创建路径的过程中，每次开始创建时都要调用beginPath函数。</p>
+<p>closePath()<br>如果当前子路径是打开的，就关闭它。否则把子路径中的最后一个点和路径中的第一个点连接起来，形成闭合回路。</p>
+<h5 id="3-2绘制图像"><a href="#3-2绘制图像" class="headerlink" title="3.2绘制图像"></a>3.2绘制图像</h5><p>context.drawImage(image,x,y)<br>把image图像绘制到画布上x,y坐标位置。</p>
+<p>context.drawImage(image,x,y,w,h)<br>把image图像绘制到画布上x,y坐标位置，图像的宽度是w,高度是h。</p>
+<p>context.drawImage(image,sx,sy,sw,sh,dx,dy,dw,dh)<br>截取image图像以sx,sy为左上角坐标，宽度为sw,高度为sh的一块矩形区域绘制到画布上以dx,dy坐标位置，图像宽度是dw,高度是dh。</p>
+<h5 id="3-3艺术文字"><a href="#3-3艺术文字" class="headerlink" title="3.3艺术文字"></a>3.3艺术文字</h5><p>context.fillText(text,x,y,[maxWidth])<br>在canvas上填充文字，text表示需要绘制的文字，x,y分别表示绘制在canvas上的横，纵坐标，最后一个参数可选，表示显示文字的最大宽度，防止文字显示溢出。</p>
+<p>context.strokeText(text,x,y,[maxWidth])<br>在canvas上描边文字，参数的意义同fillText</p>
+<h4 id="4-Canvas的简单应用"><a href="#4-Canvas的简单应用" class="headerlink" title="4.Canvas的简单应用"></a>4.Canvas的简单应用</h4><p>利用canvas绘画出如图所以的环形html5时钟，<br><img src="../html/48B21005-4DCF-4452-B74E-06A5D971918D.png" alt="avatar"></p>
+<p>主要函数：context.arc(x,y,r,sAngle,eAngle,counterclockwise);<br><img src="../html/56F4CD73-005D-4DAA-95A5-DABE4DE3026D.png" alt="avatar"></p>
+<p>主要代码如下：</p>
+<pre><code>function degToRad(degree){
+    var factor = Math.PI/180;
+    return degree*factor;
+}
+function renderTime(){
+    var now = new Date();
+    var today = now.toDateString();
+    var time = now.toLocaleTimeString();
+    var hrs = now.getHours();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+    var mil = now.getMilliseconds();
+    var smoothsec = sec+(mil/1000);
+      var smoothmin = min+(smoothsec/60);
+
+    //Background
+    gradient = ctx.createRadialGradient(250, 250, 5, 250, 250, 300);
+    gradient.addColorStop(0, &quot;#03303a&quot;);
+    gradient.addColorStop(1, &quot;black&quot;);
+    ctx.fillStyle = gradient;
+    //ctx.fillStyle = &apos;rgba(00 ,00 , 00, 1)&apos;;
+    ctx.fillRect(0, 0, 500, 500);
+    //Hours
+    ctx.beginPath();
+    ctx.arc(250,250,200, degToRad(270), degToRad((hrs*30)-90));
+    ctx.stroke();
+    //Minutes
+    ctx.beginPath();
+    ctx.arc(250,250,170, degToRad(270), degToRad((smoothmin*6)-90));
+    ctx.stroke();
+    //Seconds
+    ctx.beginPath();
+    ctx.arc(250,250,140, degToRad(270), degToRad((smoothsec*6)-90));
+    ctx.stroke();
+    //Date
+    ctx.font = &quot;25px Helvetica&quot;;
+    ctx.fillStyle = &apos;rgba(00, 255, 255, 1)&apos;
+    ctx.fillText(today, 175, 250);
+    //Time
+    ctx.font = &quot;25px Helvetica Bold&quot;;
+    ctx.fillStyle = &apos;rgba(00, 255, 255, 1)&apos;;
+    ctx.fillText(time+&quot;:&quot;+mil, 175, 280);
+}
+</code></pre><h4 id="5-canvas动画实例"><a href="#5-canvas动画实例" class="headerlink" title="5.canvas动画实例"></a>5.canvas动画实例</h4><p>利用HTML5 Canvas技术实现的万花筒动画特效，动画开始时，逐渐生成一些随机颜色的矩形方块，然后就不停的旋转，就像万花筒一样，矩形方块越来越小。<br>如图：<br><img src="../html/ac3c8e80-d9c1-4dcc-9c55-ad373b06d5fb.png" alt="avatar"></p>
+<p>主要代码：</p>
+<pre><code>window.onload=function(){
+        var canvas = document.getElementById(&quot;canvas&quot;);
+        var context = canvas.getContext(&quot;2d&quot;);
+        var rects= [];
+        context.translate(200,200);
+        setInterval(function(){
+            context.clearRect(-200,-200,400,500);
+            for(var i=0;i&lt;rects.length;i++){
+                context.save();
+                //    旋转当前绘图
+                context.rotate(rects[i].angle * Math.PI / 180);
+                //    缩放当前绘图
+                context.scale(rects[i].scale,rects[i].scale);
+                context.beginPath();
+                context.fillStyle=rects[i].color;
+                context.rect(rects[i].len,rects[i].len,50,50);
+                context.fill();
+                //    返回之前保存过的路径状态和属性
+                context.restore();
+            }
+        },60);
+        setInterval(function(){
+            rects.push(createRect());
+        },1000);
+        setInterval(function(){
+            for ( var i = 0; i &lt; rects.length; i++) {
+                rects[i].len = rects[i].len -0.2;
+                if(rects[i].len &lt;= 0){
+                    rects.splice(i,1);
+                    continue;
+                }
+                rects[i].scale = rects[i].scale - 0.002;
+                if(rects[i].scale &lt;= 0.2){
+                    rects[i].scale = 0.2;
+                }
+                rects[i].angle = rects[i].angle+2;
+                if(rects[i].angle &gt;=360){
+                    rects[i].angle =0;
+                }
+
+            }
+        },60);
+    };
+
+function createRect(){
+    var rect = {
+            len:150,
+            scale:1,
+            angle:0,
+            color:&quot;rgb(&quot;+getRandom()+&quot;,&quot;+getRandom()+&quot;,&quot;+getRandom()+&quot;)&quot;
+    };
+    return rect;
+}
+function getRandom(){
+    return Math.floor(Math.random()*255);
+}
+</code></pre><blockquote>
+<p>setTimeout() 实现的动画和 requestAnimationFrame() 实现的动画的区别</p>
+</blockquote>
+<h4 id="6-THREE-JS-和Canvas"><a href="#6-THREE-JS-和Canvas" class="headerlink" title="6. THREE.JS 和Canvas"></a>6. THREE.JS 和Canvas</h4><h5 id="6-1-three-js是做什么的"><a href="#6-1-three-js是做什么的" class="headerlink" title="6.1 three.js是做什么的"></a>6.1 three.js是做什么的</h5><p>webGL基于光栅化的2D API，封装成了我们人类能看懂的 3D API。</p>
+<p>1.辅助我们导出了模型数据；</p>
+<p>2.自动生成了各种矩阵；</p>
+<p>3.生成了顶点着色器；</p>
+<p>4.辅助我们生成材质，配置灯光；</p>
+<p>5.根据我们设置的材质生成了片元着色器。</p>
+<blockquote>
+<p>开源地址：<a href="https://github.com/mrdoob/three.js" target="_blank" rel="noopener">https://github.com/mrdoob/three.js</a></p>
+</blockquote>
+<h5 id="6-2-three-js三大组件"><a href="#6-2-three-js三大组件" class="headerlink" title="6.2 three.js三大组件"></a>6.2 three.js三大组件</h5><h6 id="渲染器（Renderer）"><a href="#渲染器（Renderer）" class="headerlink" title="渲染器（Renderer）"></a>渲染器（Renderer）</h6><p>渲染器将和Canvas元素进行绑定</p>
+<pre><code>var renderer = new THREE.WebGLRenderer({
+    canvas: document.getElementById(‘mainCanvas’)
+});
+</code></pre><p>如果想要Three.js生成Canvas元素，在HTML中就不需要定义canvas，在js中可以这样写：</p>
+<pre><code>var renderer = new THREE.WebGLRenderer();
+renderer.setSize(400,300);
+document.getElementsByTagName(‘body’[0].appendChild(renderer.domElement);
+renderer.setClearColor(0x000000);
+</code></pre><h6 id="场景（Scene）"><a href="#场景（Scene）" class="headerlink" title="场景（Scene）"></a>场景（Scene）</h6><p>　在Three.js中添加的物体都是添加到场景中的。在程序最开始的时候进行实例化，然后将物体添加到场景中即可。</p>
+<pre><code>var scene = new THREE.Scene();
+</code></pre><h6 id="照相机（Camera）"><a href="#照相机（Camera）" class="headerlink" title="照相机（Camera）"></a>照相机（Camera）</h6><p>webGL和Three.js使用的坐标系是右手坐标系：<br><img src="../html/899901-20160725133656700-2000808953.png" alt="avatar"><br>相机分正投影相机和透视投影相机。这里先定义一直透视投影的照相机</p>
+<pre><code>var camera = new THREE.PerspectiveCamera(45,4/3,1,1000);
+//四个参数分别对应：视角、近处的裁面的距离、远处的裁面的距离、实际窗口的纵横比（后面会详细讨论）
+camera.position.set(0,0,5);//设置相机位置
+scene.add(camera);//添加到场景中
+</code></pre><h6 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h6><p>在定义了场景中的物体，设置好的照相机之后，渲染器就知道如何渲染出二维的结果了。调用渲染器的渲染函数，就能使其渲染一次了</p>
+<pre><code>renderer.render(scene, camera);
+</code></pre><h5 id="6-3-three-js案例"><a href="#6-3-three-js案例" class="headerlink" title="6.3 three.js案例"></a>6.3 three.js案例</h5><pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+
+&lt;title&gt;3.js测试一&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body onload=&quot;init()&quot;&gt;
+
+&lt;canvas id=&quot;mainCanvas&quot; width=&quot;400px&quot; height=&quot;300px&quot; &gt;&lt;/canvas&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/three.min.js&quot;&gt;&lt;/script&gt;&lt;!--路径改成你的--&gt;
+
+    &lt;script type=&quot;text/javascript&quot;&gt;
+
+        function init() {
+
+            // renderer 渲染器
+
+            var renderer = new THREE.WebGLRenderer({
+
+                canvas: document.getElementById(&apos;mainCanvas&apos;)　　//绑定canvas
+
+            });
+
+            renderer.setClearColor(0x000000); // black 
+
+
+
+            // scene 场景
+
+            var scene = new THREE.Scene();　　//实例化场景
+
+
+
+            // camera 照相机
+
+            var camera = new THREE.PerspectiveCamera(45, 4 / 3, 1, 1000);　　//透视投影相机参数设置
+
+            camera.position.set(0, 0, 5);　　//相机位置设置
+
+            scene.add(camera);　　//添加到场景
+
+
+
+            // a cube in the scene 创建的物体
+
+            var cube = new THREE.Mesh(new THREE.CubeGeometry(1, 2, 3),　　//创建网格，参数一：几何体（立方体）
+
+                    new THREE.MeshBasicMaterial({　　//参数二：材质（网格基础材质）
+
+                        color: 0xff0000　　//设置颜色
+
+                    })
+
+            );
+
+            scene.add(cube);　　//添加到场景
+
+
+
+            // render 渲染
+
+            renderer.render(scene, camera);
+
+        }
+
+    &lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre><blockquote>
+<p>three.js初始化方法为init()</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/01/JavaScript基础分享Ⅰ/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/gaojihealth2.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高济无线团队">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/01/JavaScript基础分享Ⅰ/" itemprop="url">进击的前端开发（JavaScript基础篇一）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-01T13:28:39+08:00">
+                2019-04-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/04/01/JavaScript基础分享Ⅰ/" class="leancloud_visitors" data-flag-title="进击的前端开发（JavaScript基础篇一）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="进击的前端开发（JavaScript基础篇一）"><a href="#进击的前端开发（JavaScript基础篇一）" class="headerlink" title="进击的前端开发（JavaScript基础篇一）"></a>进击的前端开发（JavaScript基础篇一）</h2><h3 id="Ⅰ-JavaScript的历史"><a href="#Ⅰ-JavaScript的历史" class="headerlink" title="Ⅰ. JavaScript的历史"></a>Ⅰ. JavaScript的历史</h3><p>在上个世纪的1995年，当时的网景公司正凭借其Navigator浏览器成为Web时代开启时最著名的第一代互联网公司。<br>由于网景公司希望能在静态HTML页面上添加一些动态效果，于是叫Brendan Eich这哥们在两周之内设计出了JavaScript轻量级编程语言。<br>为什么起名叫JavaScript？原因是当时Java语言非常红火，所以网景公司希望借Java的名气来推广，但事实上JavaScript除了语法上有点像Java，其他部分基本上没啥关系。</p>
+<h3 id="Ⅱ-JavaScript快速入门"><a href="#Ⅱ-JavaScript快速入门" class="headerlink" title="Ⅱ. JavaScript快速入门"></a>Ⅱ. JavaScript快速入门</h3><h4 id="1-语法"><a href="#1-语法" class="headerlink" title="1.语法"></a>1.语法</h4><p>JavaScript的语法和Java语言类似，每个语句以;结束，语句块用{…}。但是，JavaScript并不强制要求在每个语句的结尾加;，浏览器中负责执行JavaScript代码的引擎会自动在每个语句的结尾补上;。<br>例如，下面的一行代码就是一个完整的赋值语句：<br><code>var x = 1;</code></p>
+<p>下面的一行代码是一个字符串，但仍然可以视为一个完整的语句：<br><code>&#39;Hello, world&#39;;</code></p>
+<p>下面的一行代码包含两个语句，每个语句用;表示语句结束：<br><code>var x = 1; var y = 2; // 不建议一行写多个语句!</code></p>
+<p>语句块是一组语句的集合，例如，下面的代码先做了一个判断，如果判断成立，将执行{…}中的所有语句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if (2 &gt; 1) &#123;</span><br><span class="line">    x = 1;    </span><br><span class="line">    y = 2;</span><br><span class="line">    z = 3;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意花括号{…}内的语句具有缩进，通常是4个空格。缩进不是JavaScript语法要求必须的，但缩进有助于我们理解代码的层次，所以编写代码时要遵守缩进规则。很多文本编辑器具有“自动缩进”的功能，可以帮助整理代码。<br>{…}还可以嵌套，形成层级结构：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">if (2 &gt; 1) &#123;</span><br><span class="line">    x = 1;</span><br><span class="line">    y = 2;</span><br><span class="line">    z = 3;</span><br><span class="line">    if (x &lt; y) &#123;</span><br><span class="line">        z = 4;</span><br><span class="line">    &#125;</span><br><span class="line">    if (x &gt; y) &#123;</span><br><span class="line">        z = 5;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>JavaScript本身对嵌套的层级没有限制，但是过多的嵌套无疑会大大增加看懂代码的难度。遇到这种情况，需要把部分代码抽出来，作为函数来调用，这样可以减少代码的复杂度。</p>
+<p>注释</p>
+<p>以//开头直到行末的字符被视为行注释，注释是给开发人员看到，JavaScript引擎会自动忽略：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 这是一行注释</span><br><span class="line">alert(&apos;hello&apos;); // 这也是注释</span><br></pre></td></tr></table></figure>
+<p>另一种块注释是用/<em>…</em>/把多行字符包裹起来，把一大“块”视为一个注释：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/* 从这里开始是块注释</span><br><span class="line">仍然是注释</span><br><span class="line">仍然是注释</span><br><span class="line">注释结束 */</span><br></pre></td></tr></table></figure>
+<h4 id="2-数据类型"><a href="#2-数据类型" class="headerlink" title="2.数据类型"></a>2.数据类型</h4><p>在JavaScript中定义了以下几种数据类型：</p>
+<h5 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h5><p>JavaScript不区分整数和浮点数，统一用Number表示，以下都是合法的Number类型：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">123; // 整数123</span><br><span class="line">0.456; // 浮点数0.456</span><br><span class="line">1.2345e3; // 科学计数法表示1.2345x1000，等同于1234.5</span><br><span class="line">-99; // 负数</span><br><span class="line">NaN; // NaN表示Not a Number，当无法计算结果时用NaN表示</span><br><span class="line">Infinity; // Infinity表示无限大，当数值超过了JavaScript的Number所能表示的最大值时，就表示为Infinity</span><br></pre></td></tr></table></figure>
+<p>计算机由于使用二进制，所以，有时候用十六进制表示整数比较方便，十六进制用0x前缀和0-9，a-f表示，例如：0xff00，0xa5b4c3d2，等等，它们和十进制表示的数值完全一样。<br>Number可以直接做四则运算，规则和数学一致：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1 + 2; // 3</span><br><span class="line">(1 + 2) * 5 / 2; // 7.5</span><br><span class="line">2 / 0; // Infinity</span><br><span class="line">0 / 0; // NaN</span><br><span class="line">10 % 3; // 1</span><br><span class="line">10.5 % 3; // 1.5</span><br></pre></td></tr></table></figure>
+<p>注意%是求余运算。</p>
+<h5 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h5><p>字符串是以单引号’或双引号”括起来的任意文本，比如’abc’，”xyz”等等。请注意，’’或””本身只是一种表示方式，不是字符串的一部分，因此，字符串’abc’只有a，b，c这3个字符。</p>
+<ul>
+<li>多行字符串</li>
+</ul>
+<p>由于多行字符串用\n写起来比较费事，所以最新的ES6标准新增了一种多行字符串的表示方法，用反引号 <code>...</code> 表示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">`这是一个</span><br><span class="line">多行</span><br><span class="line">字符串`;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>模板字符串</li>
+</ul>
+<p>要把多个字符串连接起来，可以用+号连接：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var name = &apos;小明&apos;;</span><br><span class="line">var age = 20;</span><br><span class="line">var message = &apos;你好, &apos; + name + &apos;, 你今年&apos; + age + &apos;岁了!&apos;;</span><br><span class="line">alert(message);</span><br></pre></td></tr></table></figure>
+<p>如果有很多变量需要连接，用+号就比较麻烦。ES6新增了一种模板字符串，用<code></code>，表示方法和上面的多行字符串一样，但是它会自动替换字符串中的变量：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var name = &apos;小明&apos;;</span><br><span class="line">var age = 20;</span><br><span class="line">var message = `你好, $&#123;name&#125;, 你今年$&#123;age&#125;岁了!`;</span><br><span class="line">alert(message);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>操作字符串</li>
+</ul>
+<p>字符串常见的操作如下：</p>
+<ul>
+<li>获取字符串长度</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var s = &apos;Hello, world!&apos;;</span><br><span class="line">s.length; // 13</span><br></pre></td></tr></table></figure>
+<ul>
+<li>要获取字符串某个指定位置的字符，使用类似Array的下标操作，索引号从0开始：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var s = &apos;Hello, world!&apos;;</span><br><span class="line"></span><br><span class="line">s[0]; // &apos;H&apos;</span><br><span class="line">s[6]; // &apos; &apos;</span><br><span class="line">s[7]; // &apos;w&apos;</span><br><span class="line">s[12]; // &apos;!&apos;</span><br><span class="line">s[13]; // undefined 超出范围的索引不会报错，但一律返回undefined</span><br><span class="line">需要特别注意的是，字符串是不可变的，如果对字符串的某个索引赋值，不会有任何错误，但是，也没有任何效果：</span><br><span class="line">var s = &apos;Test&apos;;</span><br><span class="line">s[0] = &apos;X&apos;;</span><br><span class="line">alert(s); // s仍然为&apos;Test&apos;</span><br></pre></td></tr></table></figure>
+<p>JavaScript为字符串提供了一些常用方法，注意，调用这些方法本身不会改变原有字符串的内容，而是返回一个新字符串：</p>
+<ul>
+<li>toUpperCase()把一个字符串全部变为大写：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var s = &apos;Hello&apos;;</span><br><span class="line">s.toUpperCase(); // 返回&apos;HELLO&apos;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>toLowerCase()把一个字符串全部变为小写：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var s = &apos;Hello&apos;;</span><br><span class="line">var lower = s.toLowerCase(); // 返回&apos;hello&apos;并赋值给变量lower</span><br><span class="line">lower; // &apos;hello&apos;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>indexOf</p>
+<p>indexOf()会搜索指定字符串出现的位置：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var s = &apos;hello, world&apos;;</span><br><span class="line">s.indexOf(&apos;world&apos;); // 返回7</span><br><span class="line">s.indexOf(&apos;World&apos;); // 没有找到指定的子串，返回-1</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>substring</p>
+<p>substring()返回指定索引区间的子串：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var s = &apos;hello, world&apos;</span><br><span class="line">s.substring(0, 5); // 从索引0开始到5（不包括5），返回&apos;hello&apos;</span><br><span class="line">s.substring(7); // 从索引7开始到结束，返回&apos;world&apos;</span><br></pre></td></tr></table></figure>
+<h5 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h5><p>布尔值和布尔代数的表示完全一致，一个布尔值只有true、false两种值，要么是true，要么是false，可以直接用true、false表示布尔值，也可以通过布尔运算计算出来：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">true; // 这是一个true值</span><br><span class="line">false; // 这是一个false值</span><br><span class="line">2 &gt; 1; // 这是一个true值</span><br><span class="line">2 &gt;= 3; // 这是一个false值</span><br></pre></td></tr></table></figure>
+<p>&amp;&amp;运算是与运算，只有所有都为true，&amp;&amp;运算结果才是true：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">true &amp;&amp; true; // 这个&amp;&amp;语句计算结果为true</span><br><span class="line">true &amp;&amp; false; // 这个&amp;&amp;语句计算结果为false</span><br><span class="line">false &amp;&amp; true &amp;&amp; false; // 这个&amp;&amp;语句计算结果为false</span><br></pre></td></tr></table></figure>
+<p>||运算是或运算，只要其中有一个为true，||运算结果就是true：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">false || false; // 这个||语句计算结果为false</span><br><span class="line">true || false; // 这个||语句计算结果为true</span><br><span class="line">false || true || false; // 这个||语句计算结果为true</span><br></pre></td></tr></table></figure>
+<p>!运算是非运算，它是一个单目运算符，把true变成false，false变成true：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">! true; // 结果为false</span><br><span class="line">! false; // 结果为true</span><br><span class="line">! (2 &gt; 5); // 结果为true</span><br></pre></td></tr></table></figure>
+<p>布尔值经常用在条件判断中，比如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var age = 15;</span><br><span class="line">if (age &gt;= 18) &#123;</span><br><span class="line">    alert(&apos;adult&apos;);</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    alert(&apos;teenager&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h5><p>当我们对Number做比较时，可以通过比较运算符得到一个布尔值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2 &gt; 5; // false</span><br><span class="line">5 &gt;= 2; // true</span><br><span class="line">7 == 7; // true</span><br></pre></td></tr></table></figure>
+<p>实际上，JavaScript允许对任意数据类型做比较：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">false == 0; // true</span><br><span class="line">false === 0; // false</span><br></pre></td></tr></table></figure>
+<p>要特别注意相等运算符==。JavaScript在设计时，有两种比较运算符：<br>第一种是==比较，它会自动转换数据类型再比较，很多时候，会得到非常诡异的结果；</p>
+<p>第二种是===比较，它不会自动转换数据类型，如果数据类型不一致，返回false，如果一致，再比较。</p>
+<p>由于JavaScript这个设计缺陷，不要使用==比较，<strong>始终坚持使用===比较</strong>。</p>
+<p>另一个例外是NaN这个特殊的Number与所有其他值都不相等，包括它自己：<br><code>NaN === NaN; // false</code></p>
+<p>唯一能判断NaN的方法是通过isNaN()函数：<br><code>isNaN(NaN); // true</code></p>
+<p>最后要注意浮点数的相等比较：<br><code>1 / 3 === (1 - 2 / 3); // false</code></p>
+<p>这不是JavaScript的设计缺陷。浮点数在运算过程中会产生误差，因为计算机无法精确表示无限循环小数。要比较两个浮点数是否相等，只能计算它们之差的绝对值，看是否小于某个阈值：<br><code>Math.abs(1 / 3 - (1 - 2 / 3)) &lt; 0.0000001; // true</code></p>
+<h5 id="null和undefined"><a href="#null和undefined" class="headerlink" title="null和undefined"></a>null和undefined</h5><p>null表示一个“空”的值，它和0以及空字符串’’不同，0是一个数值，’’表示长度为0的字符串，而null表示“空”。</p>
+<p>在其他语言中，也有类似JavaScript的null的表示，例如Java也用null，Swift用nil，Python用None表示。但是，在JavaScript中，还有一个和null类似的undefined，它表示“未定义”。</p>
+<p>JavaScript的设计者希望用null表示一个空的值，而undefined表示值未定义。事实证明，这并没有什么用，区分两者的意义不大。大多数情况下，我们都应该用null。undefined仅仅在判断函数参数是否传递的情况下有用。</p>
+<h5 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h5><p>数组是一组按顺序排列的集合，集合的每个值称为元素。JavaScript的数组可以包括任意数据类型。<br>例如：</p>
+<p><code>[1, 2, 3.14, &#39;Hello&#39;, null, true];</code></p>
+<p>上述数组包含6个元素。数组用[]表示，元素之间用,分隔。</p>
+<p>另一种创建数组的方法是通过Array()函数实现：</p>
+<p><code>new Array(1, 2, 3); // 创建了数组[1, 2, 3]</code></p>
+<p>然而，出于代码的可读性考虑，强烈建议直接使用[]。</p>
+<ul>
+<li>数组的元素可以通过索引来访问。请注意，索引的起始值为0：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3.14, &apos;Hello&apos;, null, true];</span><br><span class="line">arr[0]; // 返回索引为0的元素，即1</span><br><span class="line">arr[5]; // 返回索引为5的元素，即true</span><br><span class="line">arr[6]; // 索引超出了范围，返回undefined</span><br></pre></td></tr></table></figure>
+<ul>
+<li>要取得Array的长度，直接访问length属性：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3.14, &apos;Hello&apos;, null, true];</span><br><span class="line">arr.length; // 6</span><br></pre></td></tr></table></figure>
+<p>请注意，直接给Array的length赋一个新的值会导致Array大小的变化：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3];</span><br><span class="line">arr.length; // 3</span><br><span class="line">arr.length = 6;</span><br><span class="line">arr; // arr变为[1, 2, 3, undefined, undefined, undefined]</span><br><span class="line">arr.length = 2;</span><br><span class="line">arr; // arr变为[1, 2]</span><br></pre></td></tr></table></figure>
+<p>Array可以通过索引把对应的元素修改为新的值，因此，对Array的索引进行赋值会直接修改这个Array：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;];</span><br><span class="line">arr[1] = 99;</span><br><span class="line">arr; // arr现在变为[&apos;A&apos;, 99, &apos;C&apos;]</span><br></pre></td></tr></table></figure>
+<p>请注意，如果通过索引赋值时，索引超过了范围，同样会引起Array大小的变化：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2, 3];</span><br><span class="line">arr[5] = &apos;x&apos;;</span><br><span class="line">arr; // arr变为[1, 2, 3, undefined, undefined, &apos;x&apos;]</span><br></pre></td></tr></table></figure>
+<p>大多数其他编程语言不允许直接改变数组的大小，越界访问索引会报错。然而，JavaScript的Array却不会有任何错误。在编写代码时，不建议直接修改Array的大小，<strong>访问索引时要确保索引不会越界</strong>。</p>
+<ul>
+<li><p>indexOf</p>
+<p>与String类似，Array也可以通过indexOf()来搜索一个指定的元素的位置：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr = [10, 20, &apos;30&apos;, &apos;xyz&apos;];</span><br><span class="line">arr.indexOf(10); // 元素10的索引为0</span><br><span class="line">arr.indexOf(20); // 元素20的索引为1</span><br><span class="line">arr.indexOf(30); // 元素30没有找到，返回-1</span><br><span class="line">arr.indexOf(&apos;30&apos;); // 元素&apos;30&apos;的索引为2</span><br></pre></td></tr></table></figure>
+<p>注意了，数字30和字符串’30’是不同的元素。</p>
+<ul>
+<li><p>slice</p>
+<p>slice()就是对应String的substring()版本，它截取Array的部分元素，然后返回一个新的Array：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, &apos;D&apos;, &apos;E&apos;, &apos;F&apos;, &apos;G&apos;];</span><br><span class="line">arr.slice(0, 3); // 从索引0开始，到索引3结束，但不包括索引3: [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]</span><br><span class="line">arr.slice(3); // 从索引3开始到结束: [&apos;D&apos;, &apos;E&apos;, &apos;F&apos;, &apos;G&apos;]</span><br></pre></td></tr></table></figure>
+<p>注意到slice()的起止参数包括开始索引，不包括结束索引。</p>
+<p>如果不给slice()传递任何参数，它就会从头到尾截取所有元素。利用这一点，我们可以很容易地复制一个Array：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var arr = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, &apos;D&apos;, &apos;E&apos;, &apos;F&apos;, &apos;G&apos;];</span><br><span class="line">var aCopy = arr.slice();</span><br><span class="line">aCopy; // [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, &apos;D&apos;, &apos;E&apos;, &apos;F&apos;, &apos;G&apos;]</span><br><span class="line">aCopy === arr; // false</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><p>push和pop</p>
+<p>push()向Array的末尾添加若干元素，pop()则把Array的最后一个元素删除掉：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2];</span><br><span class="line">arr.push(&apos;A&apos;, &apos;B&apos;); // 返回Array新的长度: 4</span><br><span class="line">arr; // [1, 2, &apos;A&apos;, &apos;B&apos;]</span><br><span class="line">arr.pop(); // pop()返回&apos;B&apos;</span><br><span class="line">arr; // [1, 2, &apos;A&apos;]</span><br><span class="line">arr.pop(); arr.pop(); arr.pop(); // 连续pop 3次</span><br><span class="line">arr; // []</span><br><span class="line">arr.pop(); // 空数组继续pop不会报错，而是返回undefined</span><br><span class="line">arr; // []</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>unshift和shift</p>
+<p>如果要往Array的头部添加若干元素，使用unshift()方法，shift()方法则把Array的第一个元素删掉：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var arr = [1, 2];</span><br><span class="line">arr.unshift(&apos;A&apos;, &apos;B&apos;); // 返回Array新的长度: 4</span><br><span class="line">arr; // [&apos;A&apos;, &apos;B&apos;, 1, 2]</span><br><span class="line">arr.shift(); // &apos;A&apos;</span><br><span class="line">arr; // [&apos;B&apos;, 1, 2]</span><br><span class="line">arr.shift(); arr.shift(); arr.shift(); // 连续shift 3次</span><br><span class="line">arr; // []</span><br><span class="line">arr.shift(); // 空数组继续shift不会报错，而是返回undefined</span><br><span class="line">arr; // []</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>sort</p>
+<p>sort()可以对当前Array进行排序，它会直接修改当前Array的元素位置，直接调用时，按照默认顺序排序：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr = [&apos;B&apos;, &apos;C&apos;, &apos;A&apos;];</span><br><span class="line">arr.sort();</span><br><span class="line">arr; // [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>reverse</p>
+<p>reverse()把整个Array的元素进行反转：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr = [&apos;one&apos;, &apos;two&apos;, &apos;three&apos;];</span><br><span class="line">arr.reverse(); </span><br><span class="line">arr; // [&apos;three&apos;, &apos;two&apos;, &apos;one&apos;]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>splice</p>
+<p>splice()方法是修改Array的“万能方法”，它可以从指定的索引开始删除若干元素，然后再从该位置添加若干元素：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var arr = [&apos;Microsoft&apos;, &apos;Apple&apos;, &apos;Yahoo&apos;, &apos;AOL&apos;, &apos;Excite&apos;, &apos;Oracle&apos;];</span><br><span class="line">// 从索引2开始删除3个元素,然后再添加两个元素:</span><br><span class="line">arr.splice(2, 3, &apos;Google&apos;, &apos;Facebook&apos;); // 返回删除的元素 [&apos;Yahoo&apos;, &apos;AOL&apos;, &apos;Excite&apos;]</span><br><span class="line">arr; // [&apos;Microsoft&apos;, &apos;Apple&apos;, &apos;Google&apos;, &apos;Facebook&apos;, &apos;Oracle&apos;]</span><br><span class="line">// 只删除,不添加:</span><br><span class="line">arr.splice(2, 2); // [&apos;Google&apos;, &apos;Facebook&apos;]</span><br><span class="line">arr; // [&apos;Microsoft&apos;, &apos;Apple&apos;, &apos;Oracle&apos;]</span><br><span class="line">// 只添加,不删除:</span><br><span class="line">arr.splice(2, 0, &apos;Google&apos;, &apos;Facebook&apos;); // 返回[],因为没有删除任何元素</span><br><span class="line">arr; // [&apos;Microsoft&apos;, &apos;Apple&apos;, &apos;Google&apos;, &apos;Facebook&apos;, &apos;Oracle&apos;]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>concat</p>
+<p>concat()方法把当前的Array和另一个Array连接起来，并返回一个新的Array：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var arr = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;];</span><br><span class="line">var added = arr.concat([1, 2, 3]);</span><br><span class="line">added; // [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, 1, 2, 3]</span><br><span class="line">arr; // [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]</span><br></pre></td></tr></table></figure>
+<p>请注意，concat()方法并没有修改当前Array，而是返回了一个新的Array。<br>实际上，concat()方法可以接收任意个元素和Array，并且自动把Array拆开，然后全部添加到新的Array里：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var arr = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;];</span><br><span class="line">arr.concat(1, 2, [3, 4]); // [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, 1, 2, 3, 4]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>join</p>
+<p>join()方法是一个非常实用的方法，它把当前Array的每个元素都用指定的字符串连接起来，然后返回连接后的字符串：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var arr = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, 1, 2, 3];</span><br><span class="line">arr.join(&apos;-&apos;); // &apos;A-B-C-1-2-3&apos;</span><br></pre></td></tr></table></figure>
+<p>如果Array的元素不是字符串，将自动转换为字符串后再连接。</p>
+<h5 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h5><p>如果数组的某个元素又是一个Array，则可以形成多维数组，例如：<br><code>var arr = [[1, 2, 3], [400, 500, 600], &#39;-&#39;];</code><br>上述Array包含3个元素，其中头两个元素本身也是Array。</p>
+<h5 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h5><p>JavaScript的对象是一组由键-值组成的无序集合，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var person = &#123;</span><br><span class="line">    name: ‘kk&apos;,</span><br><span class="line">    age: 20,</span><br><span class="line">    tags: [&apos;js&apos;, &apos;web&apos;,’android’,’ios&apos;],</span><br><span class="line">    city: &apos;Beijing&apos;,</span><br><span class="line">    hasCar: false,</span><br><span class="line">    zipcode: null</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>JavaScript对象的键都是字符串类型，值可以是任意数据类型。</p>
+<p>上述person对象一共定义了6个键值对，其中每个键又称为对象的属性，例如，person的name属性为’kk’，zipcode属性为null。</p>
+<p>要获取一个对象的属性，我们用对象变量.属性名的方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">person.name; // ‘kk&apos;</span><br><span class="line">person.zipcode; // null</span><br></pre></td></tr></table></figure>
+<p>访问属性是通过.操作符完成的，但这要求<strong>属性名必须是一个有效的变量名</strong>。如果属性名包含特殊字符，就必须用’’括起来,比如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var student = &#123;</span><br><span class="line">    name: &apos;kk&apos;,</span><br><span class="line">    &apos;middle-school&apos;: ‘一中&apos;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>student的属性名middle-school不是一个有效的变量，<strong>变量名是大小写英文、数字、$和_的组合，且不能用数字开头。变量名也不能是JavaScript的关键字</strong>,就需要用’’括起来。访问这个属性也无法使用.操作符，必须用[‘xxx’]来访问：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">student[&apos;middle-school&apos;];</span><br><span class="line">student[&apos;name&apos;]; </span><br><span class="line">student;</span><br></pre></td></tr></table></figure>
+<p>如果访问一个不存在的属性，JavaScript规定，访问不存在的属性不报错，而是返回undefined。</p>
+<p>由于JavaScript的对象是动态类型，你可以自由地给一个对象添加或删除属性：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var student = &#123;</span><br><span class="line">    name: &apos;小明&apos;</span><br><span class="line">&#125;;</span><br><span class="line">student; // undefined</span><br><span class="line">student.age = 18; // 新增一个age属性</span><br><span class="line">student.age; // 18</span><br><span class="line">delete student.age; // 删除age属性</span><br><span class="line">student.age; // undefined</span><br><span class="line">delete student[&apos;name&apos;]; // 删除name属性</span><br><span class="line">student.name; // undefined</span><br><span class="line">delete student.school; // 删除一个不存在的school属性也不会报错</span><br></pre></td></tr></table></figure>
+<p>如果我们要检测student是否拥有某一属性，可以用in操作符：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var student = &#123;</span><br><span class="line">    name: &apos;小明&apos;,</span><br><span class="line">    birth: 1990,</span><br><span class="line">    school: &apos;No.1 Middle School&apos;,</span><br><span class="line">    height: 1.70,</span><br><span class="line">    weight: 65,</span><br><span class="line">    score: null</span><br><span class="line">&#125;;</span><br><span class="line">&apos;name&apos; in student; // true</span><br><span class="line">&apos;grade&apos; in student; // false</span><br></pre></td></tr></table></figure>
+<p>不过要小心，如果in判断一个属性存在，这个属性不一定是student的，它可能是student继承得到的：<br><code>&#39;toString&#39; in student; // true</code><br>因为toString定义在object对象中，而所有对象最终都会在原型链上指向object，所以student也拥有toString属性。<br>要判断一个属性是否是student自身拥有的，而不是继承得到的，可以用hasOwnProperty()方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var student = &#123;</span><br><span class="line">    name: &apos;小明&apos;</span><br><span class="line">&#125;;</span><br><span class="line">student.hasOwnProperty(&apos;name&apos;); // true</span><br><span class="line">student.hasOwnProperty(&apos;toString&apos;); // false</span><br></pre></td></tr></table></figure>
+<p>3.变量</p>
+<p>变量的概念基本上和初中代数的方程变量是一致的，只是在计算机程序中，变量不仅可以是数字，还可以是任意数据类型。</p>
+<p>变量在JavaScript中就是用一个变量名表示，变量名是大小写英文、数字、$和_的组合，且不能用数字开头。变量名也不能是JavaScript的关键字，如if、while等。申明一个变量用var语句，比如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var a; // 申明了变量a，此时a的值为undefined</span><br><span class="line">var $b = 1; // 申明了变量$b，同时给$b赋值，此时$b的值为1</span><br><span class="line">var s_007 = &apos;007&apos;; // s_007是一个字符串</span><br><span class="line">var Answer = true; // Answer是一个布尔值true</span><br><span class="line">var t = null; // t的值是null</span><br></pre></td></tr></table></figure>
+<p>变量名也可以用中文，但是为了编码规范，尽量不要用中文。</p>
+<p>在JavaScript中，使用等号=对变量进行赋值。可以把任意数据类型赋值给变量，<strong>同一个变量可以反复赋值</strong>，而且可以是不同类型的变量，但是要注意<strong>只能用var申明一次</strong>，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var a = 123; // a的值是整数123</span><br><span class="line">a = &apos;ABC&apos;; // a变为字符串</span><br></pre></td></tr></table></figure>
+<p>这种<strong>变量本身类型不固定的语言称之为动态语言</strong>，与之对应的是静态语言。<strong>静态语言在定义变量时必须指定变量类型，如果赋值的时候类型不匹配，就会报错</strong>。例如Java是静态语言，赋值语句如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int a = 123; // a是整数类型变量，类型用int申明</span><br><span class="line">a = &quot;ABC&quot;; // 错误：不能把字符串赋给整型变量</span><br></pre></td></tr></table></figure>
+<p>和静态语言相比，动态语言更灵活，就是这个原因。<br>请不要把赋值语句的等号等同于数学的等号。比如下面的代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var x = 10;</span><br><span class="line">x = x + 2;</span><br></pre></td></tr></table></figure>
+<p>strict模式</p>
+<p>JavaScript在设计之初，为了方便初学者学习，并不强制要求用var申明变量。这个设计错误带来了严重的后果：如果一个变量没有通过var申明就被使用，那么该变量就自动被申明为全局变量：</p>
+<p><code>i = 10; // i现在是全局变量</code><br>在同一个页面的不同的JavaScript文件中，如果都不用var申明，恰好都使用了变量i，将造成变量i互相影响，产生难以调试的错误结果。</p>
+<p><strong>使用var申明的变量则不是全局变量</strong>，它的范围被限制在该变量被申明的函数体内（函数的概念将稍后讲解），同名变量在不同的函数体内互不冲突。</p>
+<p>为了修补JavaScript这一严重设计缺陷，ECMA在后续规范中推出了strict模式，在strict模式下运行的JavaScript代码，强制通过var申明变量，未使用var申明变量就使用的，将导致运行错误。</p>
+<p>启用strict模式的方法是在JavaScript代码的第一行写上：</p>
+<p><code>&#39;use strict&#39;;</code></p>
+<p>这是一个字符串，不支持strict模式的浏览器会把它当做一个字符串语句执行，支持strict模式的浏览器将开启strict模式运行JavaScript。</p>
+<h4 id="4-条件判断"><a href="#4-条件判断" class="headerlink" title="4.条件判断"></a>4.条件判断</h4><p>JavaScript使用<code>if () { ... } else { ... }</code>来进行条件判断。例如，根据年龄显示不同内容，可以用if语句实现如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var age = 20;</span><br><span class="line">if (age &gt;= 18) &#123; // 如果age &gt;= 18为true，则执行if语句块</span><br><span class="line">    alert(&apos;adult&apos;);</span><br><span class="line">&#125; else &#123; // 否则执行else语句块</span><br><span class="line">    alert(&apos;teenager&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中else语句是可选的。如果语句块只包含一条语句，那么可以省略{}：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var age = 20;</span><br><span class="line">if (age &gt;= 18)</span><br><span class="line">    alert(&apos;adult&apos;);</span><br><span class="line">else</span><br><span class="line">    alert(&apos;teenager&apos;);</span><br></pre></td></tr></table></figure>
+<p>省略{}的危险之处在于，如果后来想添加一些语句，却忘了写{}，就改变了if…else…的语义，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var age = 20;</span><br><span class="line">if (age &gt;= 18)</span><br><span class="line">    alert(&apos;adult&apos;);</span><br><span class="line">else</span><br><span class="line">    console.log(&apos;age &lt; 18&apos;); // 添加一行日志</span><br><span class="line">    alert(&apos;teenager&apos;); // &lt;- 这行语句已经不在else的控制范围了</span><br></pre></td></tr></table></figure>
+<p>上述代码的else子句实际上只负责执行<code>console.log(&#39;age &lt; 18&#39;);</code>，原有的<code>alert(&#39;teenager&#39;);</code>已经不属于if…else…的控制范围了，它每次都会执行。</p>
+<p>相反地，有{}的语句就不会出错：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var age = 20;</span><br><span class="line">if (age &gt;= 18) &#123;</span><br><span class="line">    alert(&apos;adult&apos;);</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    console.log(&apos;age &lt; 18&apos;);</span><br><span class="line">    alert(&apos;teenager&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这就是为什么我们建议<strong>永远都要写上{}</strong>。</p>
+<p>多行条件判断<br>如果还要更细致地判断条件，可以使用多个<code>if...else...</code>的组合：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var age = 3;</span><br><span class="line">if (age &gt;= 18) &#123;</span><br><span class="line">    alert(&apos;adult&apos;);</span><br><span class="line">&#125; else if (age &gt;= 6) &#123;</span><br><span class="line">    alert(&apos;teenager&apos;);</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    alert(&apos;kid&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上述多个if…else…的组合实际上相当于两层if…else…：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var age = 3;</span><br><span class="line">if (age &gt;= 18) &#123;</span><br><span class="line">    alert(&apos;adult&apos;);</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    if (age &gt;= 6) &#123;</span><br><span class="line">        alert(&apos;teenager&apos;);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        alert(&apos;kid&apos;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>但是我们通常把else if连写在一起，来增加可读性。这里的else略掉了{}是没有问题的，因为它只包含一个if语句。注意最后一个单独的else不要略掉{}。</p>
+<p>请注意，if…else…语句的执行特点是二选一，在多个if…else…语句中，如果某个条件成立，则后续就不再继续判断了。</p>
+<h4 id="5-循环"><a href="#5-循环" class="headerlink" title="5.循环"></a>5.循环</h4><ul>
+<li>JavaScript的循环有两种，一种是for循环，通过初始条件、结束条件和递增条件来循环执行语句块：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var x = 0;</span><br><span class="line">var i;</span><br><span class="line">for (i=1; i&lt;=10000; i++) &#123;</span><br><span class="line">    x = x + i;</span><br><span class="line">&#125;</span><br><span class="line">x; // 50005000</span><br></pre></td></tr></table></figure>
+<p>for循环最常用的地方是利用索引来遍历数组：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var arr = [&apos;Apple&apos;, &apos;Google&apos;, &apos;Microsoft&apos;];</span><br><span class="line">var i, x;</span><br><span class="line">for (i=0; i&lt;arr.length; i++) &#123;</span><br><span class="line">    x = arr[i];</span><br><span class="line">    console.log(x);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>for循环的3个条件都是可以省略的，如果没有退出循环的判断条件，就必须使用break语句退出循环，否则就是死循环：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var x = 0;</span><br><span class="line">for (;;) &#123; // 将无限循环下去</span><br><span class="line">    if (x &gt; 100) &#123;</span><br><span class="line">        break; // 通过if判断来退出循环</span><br><span class="line">    &#125;</span><br><span class="line">    x ++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>for … in</p>
+<p>for循环的一个变体是for … in循环，它可以把一个对象的所有属性依次循环出来：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var o = &#123;</span><br><span class="line">    name: &apos;Jack&apos;,</span><br><span class="line">    age: 20,</span><br><span class="line">    city: &apos;Beijing&apos;</span><br><span class="line">&#125;;</span><br><span class="line">for (var key in o) &#123;</span><br><span class="line">    console.log(key); // &apos;name&apos;, &apos;age&apos;, &apos;city&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>要过滤掉对象继承的属性，用hasOwnProperty()来实现：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var o = &#123;</span><br><span class="line">    name: &apos;Jack&apos;,</span><br><span class="line">    age: 20,</span><br><span class="line">    city: &apos;Beijing&apos;</span><br><span class="line">&#125;;</span><br><span class="line">for (var key in o) &#123;</span><br><span class="line">    if (o.hasOwnProperty(key)) &#123;</span><br><span class="line">        console.log(key); // &apos;name&apos;, &apos;age&apos;, &apos;city&apos;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>由于Array也是对象，而它的每个元素的索引被视为对象的属性，因此，for … in循环可以直接循环出Array的索引：</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var a = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;];</span><br><span class="line">for (var i in a) &#123;</span><br><span class="line">    console.log(i); // &apos;0&apos;, &apos;1&apos;, &apos;2&apos;</span><br><span class="line">    console.log(a[i]); // &apos;A&apos;, &apos;B&apos;, &apos;C&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>请注意，for … in对Array的循环得到的是String而不是Number。</p>
+<ul>
+<li><p>while</p>
+<p> for循环在已知循环的初始和结束条件时非常有用。</p>
+<p> while循环只有一个判断条件，条件满足，就不断循环，条件不满足时则退出循环。比如我们要计算100以内所有奇数之和，可以用while循环实现：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var x = 0;</span><br><span class="line">var n = 99;</span><br><span class="line">while (n &gt; 0) &#123;</span><br><span class="line">    x = x + n;</span><br><span class="line">    n = n - 2;</span><br><span class="line">&#125;</span><br><span class="line">x; // 2500</span><br></pre></td></tr></table></figure>
+<p> 在循环内部变量n不断自减，直到变为-1时，不再满足while条件，循环退出。</p>
+<ul>
+<li><p>do … while</p>
+<p>最后一种循环是do { … } while()循环，它和while循环的唯一区别在于，不是在每次循环开始的时候判断条件，而是在每次循环完成的时候判断条件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var n = 0;</span><br><span class="line">do &#123;</span><br><span class="line">    n = n + 1;</span><br><span class="line">&#125; while (n &lt; 100);</span><br><span class="line">n; // 100</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<p>用do { … } while()循环要小心，循环体会至少执行1次，而for和while循环则可能一次都不执行。</p>
+<h4 id="6-Map和Set"><a href="#6-Map和Set" class="headerlink" title="6.Map和Set"></a>6.Map和Set</h4><p>JavaScript的默认对象表示方式{}可以视为其他语言中的Map或Dictionary的数据结构，即一组键值对。</p>
+<p>但是JavaScript的对象有个小问题，就是键必须是字符串。但实际上Number或者其他数据类型作为键也是非常合理的。</p>
+<ul>
+<li><p>Map</p>
+<p>Map是一组键值对的结构，具有极快的查找速度。<br>举个例子，假设要根据同学的名字查找对应的成绩，如果用Array实现，需要两个Array：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var names = [&apos;Michael&apos;, &apos;Bob&apos;, &apos;Tracy&apos;];</span><br><span class="line">var scores = [95, 75, 85];</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>给定一个名字，要查找对应的成绩，就先要在names中找到对应的位置，再从scores取出对应的成绩，Array越长，耗时越长。</p>
+<p>   如果用Map实现，只需要一个“名字”-“成绩”的对照表，直接根据名字查找成绩，无论这个表有多大，查找速度都不会变慢。用JavaScript写一个Map如下：</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var m = new Map([[&apos;Michael&apos;, 95], [&apos;Bob&apos;, 75], [&apos;Tracy&apos;, 85]]);</span><br><span class="line">m.get(&apos;Michael&apos;); // 95</span><br></pre></td></tr></table></figure>
+<p>初始化Map需要一个二维数组，或者直接初始化一个空Map。Map具有以下方法：</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var m = new Map(); // 空Map</span><br><span class="line">m.set(&apos;Adam&apos;, 67); // 添加新的key-value</span><br><span class="line">m.set(&apos;Bob&apos;, 59);</span><br><span class="line">m.has(&apos;Adam&apos;); // 是否存在key &apos;Adam&apos;: true</span><br><span class="line">m.get(&apos;Adam&apos;); // 67</span><br><span class="line">m.delete(&apos;Adam&apos;); // 删除key &apos;Adam&apos;</span><br><span class="line">m.get(&apos;Adam&apos;); // undefined</span><br></pre></td></tr></table></figure>
+<p>   由于一个key只能对应一个value，所以，多次对一个key放入value，后面的值会把前面的值冲掉：</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var m = new Map();</span><br><span class="line">m.set(&apos;Adam&apos;, 67);</span><br><span class="line">m.set(&apos;Adam&apos;, 88);</span><br><span class="line">m.get(&apos;Adam&apos;); // 88</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>Set</p>
+<p>Set和Map类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在Set中，没有重复的key。</p>
+<p>要创建一个Set，需要提供一个Array作为输入，或者直接创建一个空Set：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var s1 = new Set(); // 空Set</span><br><span class="line">var s2 = new Set([1, 2, 3]); // 含1, 2, 3</span><br></pre></td></tr></table></figure>
+<p>重复元素在Set中自动被过滤：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var s = new Set([1, 2, 3, 3, &apos;3&apos;]);</span><br><span class="line">s; // Set &#123;1, 2, 3, &quot;3&quot;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>注意数字3和字符串’3’是不同的元素。<br>通过add(key)方法可以添加元素到Set中，可以重复添加，但不会有效果：</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">s.add(4);</span><br><span class="line">s; // Set &#123;1, 2, 3, 4&#125;</span><br><span class="line">s.add(4);</span><br><span class="line">s; // 仍然是 Set &#123;1, 2, 3, 4&#125;</span><br></pre></td></tr></table></figure>
+<p>通过delete(key)方法可以删除元素：</p>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var s = new Set([1, 2, 3]);</span><br><span class="line">s; // Set &#123;1, 2, 3&#125;</span><br><span class="line">s.delete(3);</span><br><span class="line">s; // Set &#123;1, 2&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="7-iterable"><a href="#7-iterable" class="headerlink" title="7.iterable"></a>7.iterable</h4><p>遍历Array可以采用下标循环，遍历Map和Set就无法使用下标。为了统一集合类型，ES6标准引入了新的iterable类型，Array、Map和Set都属于iterable类型。</p>
+<p>具有iterable类型的集合可以通过新的for … of循环来遍历。<br>用for … of循环遍历集合，用法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var a = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;];</span><br><span class="line">var s = new Set([&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]);</span><br><span class="line">var m = new Map([[1, &apos;x&apos;], [2, &apos;y&apos;], [3, &apos;z&apos;]]);</span><br><span class="line">for (var x of a) &#123; // 遍历Array</span><br><span class="line">    console.log(x);</span><br><span class="line">&#125;</span><br><span class="line">for (var x of s) &#123; // 遍历Set</span><br><span class="line">    console.log(x);</span><br><span class="line">&#125;</span><br><span class="line">for (var x of m) &#123; // 遍历Map</span><br><span class="line">    console.log(x[0] + &apos;=&apos; + x[1]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>你可能会有疑问，for … of循环和for … in循环有何区别？</p>
+<p>for … in循环由于历史遗留问题，它遍历的实际上是对象的属性名称。一个Array数组实际上也是一个对象，它的每个元素的索引被视为一个属性。</p>
+<p>当我们手动给Array对象添加了额外的属性后，for … in循环将带来意想不到的意外效果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var a = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;];</span><br><span class="line">a.name = &apos;Hello&apos;;</span><br><span class="line">for (var x in a) &#123;</span><br><span class="line">    console.log(x); // &apos;0&apos;, &apos;1&apos;, &apos;2&apos;, &apos;name&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>for … in循环将把<strong>name</strong>包括在内，但Array的<strong>length</strong>属性却不包括在内。</p>
+<p>for … of循环则完全修复了这些问题，它<strong>只循环集合本身的元素</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var a = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;];</span><br><span class="line">a.name = &apos;Hello&apos;;</span><br><span class="line">for (var x of a) &#123;</span><br><span class="line">    console.log(x); // &apos;A&apos;, &apos;B&apos;, &apos;C&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这就是为什么要引入新的for … of循环。</p>
+<p>然而，更好的方式是直接使用iterable内置的forEach方法，它接收一个函数，每次迭代就自动回调该函数。以Array为例：</p>
+<p>注意，forEach()方法是ES5.1标准引入的，你需要测试浏览器是否支持。</p>
+<p>Set与Array类似，但Set没有索引，因此回调函数的前两个参数都是元素本身：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var s = new Set([&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]);</span><br><span class="line">s.forEach(function (element, sameElement, set) &#123;</span><br><span class="line">    console.log(element);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Map的回调函数参数依次为value、key和map本身：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var m = new Map([[1, &apos;x&apos;], [2, &apos;y&apos;], [3, &apos;z&apos;]]);</span><br><span class="line">m.forEach(function (value, key, map) &#123;</span><br><span class="line">    console.log(value);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>如果对某些参数不感兴趣，由于JavaScript的函数调用不要求参数必须一致，因此可以忽略它们。例如，只需要获得Array的element：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var a = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;];</span><br><span class="line">a.forEach(function (element) &#123;</span><br><span class="line">    console.log(element);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/14/进击的前端/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -808,7 +2063,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -830,7 +2085,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -907,7 +2162,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共1.4k字</span>
+  <span class="post-count">博客全站共12.7k字</span>
 </div>
 
         
