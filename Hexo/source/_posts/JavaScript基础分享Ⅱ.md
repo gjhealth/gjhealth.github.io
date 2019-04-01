@@ -1,3 +1,12 @@
+---
+title: 进击的前端开发（JavaScript基础篇二）
+date: 2019-04-01 13:28:39
+tags: 
+- HTML
+- javascript
+categories: 
+- 前端
+---
 ## 进击的前端开发（JavaScript基础篇二）
 
 ### Ⅲ. 函数
