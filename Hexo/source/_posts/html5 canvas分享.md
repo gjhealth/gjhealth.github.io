@@ -8,7 +8,6 @@ categories:
 - 前端
 ---
 ## HTML5 动画介绍
-
 #### 1.前言
 在 Web 开发中，经常需要实现各种动画效果，例如：移动、变形、透明度变化等，今天我们主要来讨论各种移动的实现。
 在html5中常用的实现动画的方式主要有：Canvas，SVG Animation和CSS Transform,今天我们主要介绍的是Canvas

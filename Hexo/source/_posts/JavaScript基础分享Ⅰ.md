@@ -8,7 +8,7 @@ categories:
 - 前端
 ---
 ## 进击的前端开发（JavaScript基础篇一）
-### Ⅰ. JavaScript的历史
+### Ⅰ. JavaScript的历史 
 
 在上个世纪的1995年，当时的网景公司正凭借其Navigator浏览器成为Web时代开启时最著名的第一代互联网公司。
 由于网景公司希望能在静态HTML页面上添加一些动态效果，于是叫Brendan Eich这哥们在两周之内设计出了JavaScript轻量级编程语言。
