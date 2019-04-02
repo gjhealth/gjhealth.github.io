@@ -8,7 +8,7 @@ categories:
 author: Allen
 ---
 
-##### 1. 复制文本到剪切板
+#####  复制文本到剪切板
 
 
 name：
@@ -22,7 +22,7 @@ params:
 ~~~
 
 
-##### 2. 打开一个新WebView窗口
+#####  打开一个新WebView窗口
 
 name：
 ~~~
@@ -34,7 +34,7 @@ params:
 {'url' : 'https://xxxx'}
 ~~~
 
-##### 3. 调用goback
+#####  调用goback
 
 name：
 ~~~
@@ -46,7 +46,7 @@ params:
 nil
 ~~~
 
-##### 4. Native 返回上一页
+#####   Native 返回上一页
 
 name：
 ~~~
@@ -58,7 +58,7 @@ params:
 nil
 ~~~
 
-##### 5. 自定义标题
+#####  自定义标题
 
 name：
 ~~~
@@ -70,7 +70,7 @@ params:
 {'titleString':'title'}
 ~~~
 
-##### 6. 退出登录
+#####   退出登录
 
 name：
 ~~~
@@ -82,7 +82,7 @@ params:
 nil
 ~~~
 
-##### 6. 设置导航栏右边按钮
+#####   设置导航栏右边按钮
 
 name：
 ~~~
@@ -94,7 +94,7 @@ params:
 {"navRightButtonTitle":"保存"}
 ~~~
 
-##### 7. 设置导航栏右边按钮隐藏
+#####   设置导航栏右边按钮隐藏
 
 name：
 ~~~
@@ -106,7 +106,7 @@ params:
 nil
 ~~~
 
-##### 8. 设置导航栏导航中间按钮
+#####   设置导航栏导航中间按钮
 
 name：
 ~~~
@@ -118,7 +118,7 @@ params:
 {"navCenterButtonTitle":"花儿大药房"}
 ~~~
 
-##### 9. 设置导航栏导航中间按钮隐藏
+#####   设置导航栏导航中间按钮隐藏
 
 name：
 ~~~
@@ -130,7 +130,7 @@ params:
 nil
 ~~~
 
-##### 10. 跳转Native业务模块
+#####   跳转Native业务模块
 
 name：
 ~~~
@@ -143,7 +143,7 @@ params:
 {"NativeRoute":"gjhealth://cstore/member/memberQRCodeCard"}
 ~~~
 
-##### 11. 选择地址
+#####   选择地址
 
 name：
 ~~~
@@ -164,7 +164,7 @@ callback:
 }
 ~~~
 
-##### 12. 选择组织
+#####   选择组织
 
 name：
 ~~~
@@ -187,7 +187,7 @@ callback:
 }
 ~~~
 
-##### 13. 扫一扫
+#####   扫一扫
 
 name：
 ~~~
@@ -208,7 +208,7 @@ callback:
 { @"QRCodeValueString" : codeString}
 ~~~
 
-##### 14. 调用图表预览
+#####   调用图表预览
 
 name：
 ~~~
@@ -223,7 +223,7 @@ params:
 }
 ~~~
 
-##### 15. 保存图片到相册
+#####   保存图片到相册
 
 name：
 ~~~
@@ -235,7 +235,7 @@ params:
 imageBase64
 ~~~
 
-##### 16. 分享图片
+#####   分享图片
 
 name：
 ~~~
@@ -247,7 +247,7 @@ params:
 imageBase64
 ~~~
 
-##### 17. 获取相册图片
+#####   获取相册图片
 
 name：
 ~~~
@@ -264,7 +264,7 @@ callback:
 [imageBase64,imageBase64,imageBase64,imageBase64]
 ~~~
 
-##### 18. 分享
+#####   分享
 
 name：
 ~~~
