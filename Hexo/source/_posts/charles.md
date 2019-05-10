@@ -1,13 +1,12 @@
 ---
-title:  charles 抓包工具使用教程
+title: charles 抓包工具使用教程
 date: 2019-05-10 16:00:39
-tags: 
-- 工具 
-- 文档
-categories: 
-- 文档
+tags:
+  - 工具
+  - 文档
+categories:
+  - 文档
 ---
-
 
 #### charles 介绍
 
@@ -132,7 +131,7 @@ Block Cookies 工具通过操纵控制响应 Cookies 的 HTTP 请求头来禁用
 
 #### 如果不小心点击拒绝了或者没有出现授权弹窗怎么办 ？
 
-点击导航栏上面的 Proxy->Access Contorl Settings->Add
+点击导航栏上面的 Proxy->Access Contorl Settings->Add 添加手机 ip
 ![](http://wx2.sinaimg.cn/mw690/006Fw6Kwly1g2tzc8bjgej30to0l0dxj.jpg)
 
 ![](http://wx2.sinaimg.cn/mw690/006Fw6Kwly1g2tzc8bjgej30to0l0dxj.jpg)
