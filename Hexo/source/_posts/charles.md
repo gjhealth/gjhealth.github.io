@@ -105,6 +105,12 @@ WhiteList 运行请求
 
 ![](http://wx2.sinaimg.cn/large/006Fw6Kwly1g2u6353htpj30ua0gojte.jpg)
 
+#### 过滤网络请求
+
+如果我们只想抓取某个主机的网络请求，我们可以设置过滤网络，在 Proxy->Recording Setting-》include 标签，可以在里面添加一个白名单，这样 Charles 就只截取在这个主机下的请求：
+
+![](http://wx2.sinaimg.cn/large/006Fw6Kwly1g2wd68f0tnj30vm0ocad1.jpg)
+
 #### No Caching Settings 禁止缓存
 
 工具可防止客户端应用程序（如 Web 浏览器）缓存任何资源。因此，始终向远程网站发出请求，您始终可以看到最新版本。
