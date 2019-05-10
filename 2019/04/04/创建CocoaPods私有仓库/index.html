@@ -377,7 +377,7 @@
 <p><img src="https://i.loli.net/2019/04/03/5ca44bfeee983.png" alt="创建版本库"></p>
 <ul>
 <li><p>打开终端输入代码</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> pod repo add GJRepo https://github.com/gjhealth/GJRepo.git</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> pod repo add GJRepo https://github.com/gjhealth/GJRepo.git</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>查看目录 <code>~/.cocoapods/repos</code> 显示如下图，除master之外会增加一个版本仓库</p>
 <p><img src="https://i.loli.net/2019/04/03/5ca44f78bf4da.png" alt="repos目录"></p>
@@ -394,25 +394,25 @@
 <blockquote>
 <p><code>.swift-version</code>文件用来指导swift版本</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> echo "3.0" &gt; .swift-version</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">echo</span> <span class="string">"3.0"</span> &gt; .swift-version</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><code>.podspec</code>代码库pod描述文件，可以通过指令创建空白模板</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> pod spec create MyLib</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> pod spec create MyLib</span></span><br></pre></td></tr></table></figure>
 <p>或者拷贝下面模板进行修改</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Pod::Spec.new do |s|</span><br><span class="line">  s.name         = "MyAdditions" # 项目名称</span><br><span class="line">  s.version      = "0.0.1"        # 版本号 与 你仓库的 标签号 对应</span><br><span class="line">  s.license      = "MIT"          # 开源证书</span><br><span class="line">  s.summary      = "私人pod代码" # 项目简介</span><br><span class="line"></span><br><span class="line">  s.homepage     = "https://git.oschina.net/baiyingqiu/MyAdditions" # 仓库的主页</span><br><span class="line">  s.source       = &#123; :git =&gt; "https://git.oschina.net/baiyingqiu/MyAdditions.git", :tag =&gt; "#&#123;s.version&#125;" &#125;#你的仓库地址，不能用SSH地址</span><br><span class="line">  s.source_files = "MyAdditions/*.&#123;h,m&#125;" # 你代码的位置， BYPhoneNumTF/*.&#123;h,m&#125; 表示 BYPhoneNumTF 文件夹下所有的.h和.m文件</span><br><span class="line">  s.requires_arc = true # 是否启用ARC</span><br><span class="line">  s.platform     = :ios, "7.0" #平台及支持的最低版本</span><br><span class="line">  # s.frameworks   = "UIKit", "Foundation" #支持的框架</span><br><span class="line">  # s.dependency   = "AFNetworking" # 依赖库</span><br><span class="line"></span><br><span class="line">  # User</span><br><span class="line">  s.author             = &#123; "BY" =&gt; "qiubaiyingios@163.com" &#125; # 作者信息</span><br><span class="line">  s.social_media_url   = "http://qiubaiying.github.io" # 个人主页</span><br><span class="line"></span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>验证仓库是否正确</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> pod lib lint</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> pod lib lint</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>验证并没问题后添加<code>--allow-warnings</code>就可以通过验证了</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> pod lib lint --allow-warnings</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> pod lib lint --allow-warnings</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>验证后显示</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">-&gt;</span> MyAdditions (0.0.1)</span><br><span class="line">     </span><br><span class="line">MyAdditions passed validation.</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">-&gt;</span><span class="bash"> MyAdditions (0.0.1)</span></span><br><span class="line">     </span><br><span class="line">MyAdditions passed validation.</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
@@ -571,7 +571,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -582,7 +582,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -686,7 +686,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共31.3k字</span>
+  <span class="post-count">博客全站共32.3k字</span>
 </div>
 
         
