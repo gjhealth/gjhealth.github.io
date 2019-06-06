@@ -334,3 +334,31 @@ params:
 ```
 nil
 ```
+
+##### 获取地理位置信息
+
+name：
+
+```
+locationServicesJSBridge
+```
+
+params:
+
+```
+nil
+```
+
+callback:
+
+```
+{
+  latitude:xxx,
+  longitude:xxxx,
+  country:xxx,
+  city:xxx,
+  subLocality:xxx,
+  thoroughfare:xxx,
+  name:xxx,
+}
+```
