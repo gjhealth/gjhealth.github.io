@@ -278,7 +278,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/06/11/创建webApp/" itemprop="url">构建webApp</a></h1>
+                <a class="post-title-link" href="/2019/06/11/创建webApp/" itemprop="url">构建WebApp</a></h1>
         
 
         <div class="post-meta">
@@ -330,7 +330,7 @@
 
           
           
-             <span id="/2019/06/11/创建webApp/" class="leancloud_visitors" data-flag-title="构建webApp">
+             <span id="/2019/06/11/创建webApp/" class="leancloud_visitors" data-flag-title="构建WebApp">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -378,8 +378,9 @@
 <p><img src="http://wx4.sinaimg.cn/mw690/006Fw6Kwly1g3x7jr8u9uj30zk092403.jpg" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line"></span><br><span class="line">npm start</span><br></pre></td></tr></table></figure>
 <h3 id="添加-Antd-Mobile"><a href="#添加-Antd-Mobile" class="headerlink" title="添加 Antd Mobile"></a>添加 Antd Mobile</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install antd-mobile --save</span><br><span class="line"></span><br><span class="line">npm install babel-plugin-import</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">在 package.json 里添加插件</span><br><span class="line"></span><br><span class="line">&quot;plugins&quot;: [</span><br><span class="line">[</span><br><span class="line">    &quot;import&quot;,</span><br><span class="line">    &#123;</span><br><span class="line">     &quot;libraryName&quot;: &quot;antd-mobile&quot;,</span><br><span class="line">     &quot;style&quot;: &quot;css&quot;</span><br><span class="line">    &#125;</span><br><span class="line">]</span><br><span class="line">],</span><br></pre></td></tr></table></figure>
-<p>编辑 : Allen</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">在.umirc.js 下添加插件，这样不用引入antd-mobile 的css 样式了</span><br><span class="line">extraBabelPlugins: [[&apos;import&apos;, &#123; libraryName: &apos;antd-mobile&apos;, style: true &#125;]],</span><br></pre></td></tr></table></figure>
+<h3 id="在-index-js-添加一个-Antd-Mobile-按钮"><a href="#在-index-js-添加一个-Antd-Mobile-按钮" class="headerlink" title="在 index.js 添加一个 Antd Mobile 按钮"></a>在 index.js 添加一个 Antd Mobile 按钮</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">import styles from &apos;./index.css&apos;;</span><br><span class="line">//引入组件</span><br><span class="line">import &#123; Button, WingBlank &#125; from &apos;antd-mobile&apos;;</span><br><span class="line"></span><br><span class="line">export default function() &#123;</span><br><span class="line">return (</span><br><span class="line">&lt;div className=&#123;styles.normal&#125;&gt;</span><br><span class="line">&lt;div className=&#123;styles.welcome&#125; /&gt;</span><br><span class="line">&lt;ul className=&#123;styles.list&#125;&gt;</span><br><span class="line">&lt;li&gt;</span><br><span class="line">To get started, edit &lt;code&gt;src/pages/index.js&lt;/code&gt; and save to reload.</span><br><span class="line">&lt;/li&gt;</span><br><span class="line">&lt;li&gt;</span><br><span class="line">&lt;a href=&quot;https://umijs.org/guide/getting-started.html&quot;&gt;Getting Started&lt;/a&gt;</span><br><span class="line">&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">//添加按钮</span><br><span class="line">&lt;WingBlank&gt;</span><br><span class="line">&lt;Button type=&quot;primary&quot;&gt;hello world&lt;/Button&gt;</span><br><span class="line">&lt;/WingBlank&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="http://wx4.sinaimg.cn/mw690/006Fw6Kwly1g3xagex0wej30jo108afv.jpg" alt=""><br>编辑 : Allen</p>
 
           
         
@@ -4339,7 +4340,7 @@ React 通过一种比传统的双向绑定略微繁琐的方法来实现反向�
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共33.8k字</span>
+  <span class="post-count">博客全站共33.9k字</span>
 </div>
 
         

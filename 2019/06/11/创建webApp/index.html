@@ -82,7 +82,7 @@
 <meta name="description" content="UmiJS + DvaJS + Ant Mobile 创建 React WebApp UI 组件Ant Mobile  可插拔的企业级 react 应用框架UmiJS  数据流方案DvaJS   安装 UmiJS1yarn global add umi # 或者 npm install -g umi 新建应用12345mkdir react_web_appcd react_web_appyarn">
 <meta name="keywords" content="HTML">
 <meta property="og:type" content="article">
-<meta property="og:title" content="构建webApp">
+<meta property="og:title" content="构建WebApp">
 <meta property="og:url" content="http://yoursite.com/2019/06/11/创建webApp/index.html">
 <meta property="og:site_name" content="高济无线团队">
 <meta property="og:description" content="UmiJS + DvaJS + Ant Mobile 创建 React WebApp UI 组件Ant Mobile  可插拔的企业级 react 应用框架UmiJS  数据流方案DvaJS   安装 UmiJS1yarn global add umi # 或者 npm install -g umi 新建应用12345mkdir react_web_appcd react_web_appyarn">
@@ -90,9 +90,10 @@
 <meta property="og:image" content="http://wx4.sinaimg.cn/large/006Fw6Kwly1g3x7hylimhj310408mwge.jpg">
 <meta property="og:image" content="http://wx2.sinaimg.cn/mw690/006Fw6Kwly1g3x7kquznxj310k06yt9e.jpg">
 <meta property="og:image" content="http://wx4.sinaimg.cn/mw690/006Fw6Kwly1g3x7jr8u9uj30zk092403.jpg">
-<meta property="og:updated_time" content="2019-06-11T06:55:15.054Z">
+<meta property="og:image" content="http://wx4.sinaimg.cn/mw690/006Fw6Kwly1g3xagex0wej30jo108afv.jpg">
+<meta property="og:updated_time" content="2019-06-11T08:31:09.815Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="构建webApp">
+<meta name="twitter:title" content="构建WebApp">
 <meta name="twitter:description" content="UmiJS + DvaJS + Ant Mobile 创建 React WebApp UI 组件Ant Mobile  可插拔的企业级 react 应用框架UmiJS  数据流方案DvaJS   安装 UmiJS1yarn global add umi # 或者 npm install -g umi 新建应用12345mkdir react_web_appcd react_web_appyarn">
 <meta name="twitter:image" content="http://wx4.sinaimg.cn/large/006Fw6Kwly1g3x7hylimhj310408mwge.jpg">
 
@@ -130,7 +131,7 @@
 
 
 
-  <title>构建webApp | 高济无线团队</title>
+  <title>构建WebApp | 高济无线团队</title>
   
 
 
@@ -284,7 +285,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">构建webApp</h1>
+          <h1 class="post-title" itemprop="name headline">构建WebApp</h1>
         
 
         <div class="post-meta">
@@ -336,7 +337,7 @@
 
           
           
-             <span id="/2019/06/11/创建webApp/" class="leancloud_visitors" data-flag-title="构建webApp">
+             <span id="/2019/06/11/创建webApp/" class="leancloud_visitors" data-flag-title="构建WebApp">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -382,8 +383,9 @@
 <p><img src="http://wx4.sinaimg.cn/mw690/006Fw6Kwly1g3x7jr8u9uj30zk092403.jpg" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line"></span><br><span class="line">npm start</span><br></pre></td></tr></table></figure>
 <h3 id="添加-Antd-Mobile"><a href="#添加-Antd-Mobile" class="headerlink" title="添加 Antd Mobile"></a>添加 Antd Mobile</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install antd-mobile --save</span><br><span class="line"></span><br><span class="line">npm install babel-plugin-import</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">在 package.json 里添加插件</span><br><span class="line"></span><br><span class="line">&quot;plugins&quot;: [</span><br><span class="line">[</span><br><span class="line">    &quot;import&quot;,</span><br><span class="line">    &#123;</span><br><span class="line">     &quot;libraryName&quot;: &quot;antd-mobile&quot;,</span><br><span class="line">     &quot;style&quot;: &quot;css&quot;</span><br><span class="line">    &#125;</span><br><span class="line">]</span><br><span class="line">],</span><br></pre></td></tr></table></figure>
-<p>编辑 : Allen</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">在.umirc.js 下添加插件，这样不用引入antd-mobile 的css 样式了</span><br><span class="line">extraBabelPlugins: [[&apos;import&apos;, &#123; libraryName: &apos;antd-mobile&apos;, style: true &#125;]],</span><br></pre></td></tr></table></figure>
+<h3 id="在-index-js-添加一个-Antd-Mobile-按钮"><a href="#在-index-js-添加一个-Antd-Mobile-按钮" class="headerlink" title="在 index.js 添加一个 Antd Mobile 按钮"></a>在 index.js 添加一个 Antd Mobile 按钮</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">import styles from &apos;./index.css&apos;;</span><br><span class="line">//引入组件</span><br><span class="line">import &#123; Button, WingBlank &#125; from &apos;antd-mobile&apos;;</span><br><span class="line"></span><br><span class="line">export default function() &#123;</span><br><span class="line">return (</span><br><span class="line">&lt;div className=&#123;styles.normal&#125;&gt;</span><br><span class="line">&lt;div className=&#123;styles.welcome&#125; /&gt;</span><br><span class="line">&lt;ul className=&#123;styles.list&#125;&gt;</span><br><span class="line">&lt;li&gt;</span><br><span class="line">To get started, edit &lt;code&gt;src/pages/index.js&lt;/code&gt; and save to reload.</span><br><span class="line">&lt;/li&gt;</span><br><span class="line">&lt;li&gt;</span><br><span class="line">&lt;a href=&quot;https://umijs.org/guide/getting-started.html&quot;&gt;Getting Started&lt;/a&gt;</span><br><span class="line">&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">//添加按钮</span><br><span class="line">&lt;WingBlank&gt;</span><br><span class="line">&lt;Button type=&quot;primary&quot;&gt;hello world&lt;/Button&gt;</span><br><span class="line">&lt;/WingBlank&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="http://wx4.sinaimg.cn/mw690/006Fw6Kwly1g3xagex0wej30jo108afv.jpg" alt=""><br>编辑 : Allen</p>
 
       
     </div>
@@ -584,7 +586,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#UmiJS-DvaJS-Ant-Mobile-创建-React-WebApp"><span class="nav-number">1.</span> <span class="nav-text">UmiJS + DvaJS + Ant Mobile 创建 React WebApp</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-UmiJS"><span class="nav-number">1.1.</span> <span class="nav-text">安装 UmiJS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建应用"><span class="nav-number">1.2.</span> <span class="nav-text">新建应用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加-Antd-Mobile"><span class="nav-number">1.3.</span> <span class="nav-text">添加 Antd Mobile</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#UmiJS-DvaJS-Ant-Mobile-创建-React-WebApp"><span class="nav-number">1.</span> <span class="nav-text">UmiJS + DvaJS + Ant Mobile 创建 React WebApp</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-UmiJS"><span class="nav-number">1.1.</span> <span class="nav-text">安装 UmiJS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建应用"><span class="nav-number">1.2.</span> <span class="nav-text">新建应用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加-Antd-Mobile"><span class="nav-number">1.3.</span> <span class="nav-text">添加 Antd Mobile</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在-index-js-添加一个-Antd-Mobile-按钮"><span class="nav-number">1.4.</span> <span class="nav-text">在 index.js 添加一个 Antd Mobile 按钮</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -626,7 +628,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共33.8k字</span>
+  <span class="post-count">博客全站共33.9k字</span>
 </div>
 
         
@@ -756,7 +758,7 @@
         var disqus_config = function () {
           this.page.url = 'http://yoursite.com/2019/06/11/创建webApp/';
           this.page.identifier = '2019/06/11/创建webApp/';
-          this.page.title = '构建webApp';
+          this.page.title = '构建WebApp';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://gjhealth.disqus.com/embed.js';
