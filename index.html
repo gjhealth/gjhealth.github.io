@@ -259,6 +259,175 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/11/创建webApp/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/gaojihealth2.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高济无线团队">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/06/11/创建webApp/" itemprop="url">构建webApp</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-11T12:28:39+08:00">
+                2019-06-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/06/11/创建webApp/" class="leancloud_visitors" data-flag-title="构建webApp">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="UmiJS-DvaJS-Ant-Mobile-创建-React-WebApp"><a href="#UmiJS-DvaJS-Ant-Mobile-创建-React-WebApp" class="headerlink" title="UmiJS + DvaJS + Ant Mobile 创建 React WebApp"></a>UmiJS + DvaJS + Ant Mobile 创建 React WebApp</h2><ul>
+<li><p>UI 组件<br><a href="https://mobile.ant.design/index-cn" target="_blank" rel="noopener">Ant Mobile</a></p>
+</li>
+<li><p>可插拔的企业级 react 应用框架<br><a href="https://umijs.org/zh/" target="_blank" rel="noopener">UmiJS</a></p>
+</li>
+<li><p>数据流方案<br><a href="https://dvajs.com/guide/" target="_blank" rel="noopener">DvaJS</a></p>
+</li>
+</ul>
+<h3 id="安装-UmiJS"><a href="#安装-UmiJS" class="headerlink" title="安装 UmiJS"></a>安装 UmiJS</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn global add umi # 或者 npm install -g umi</span><br></pre></td></tr></table></figure>
+<h3 id="新建应用"><a href="#新建应用" class="headerlink" title="新建应用"></a>新建应用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mkdir react_web_app</span><br><span class="line"></span><br><span class="line">cd react_web_app</span><br><span class="line"></span><br><span class="line">yarn create umi</span><br></pre></td></tr></table></figure>
+<p><img src="http://wx4.sinaimg.cn/large/006Fw6Kwly1g3x7hylimhj310408mwge.jpg" alt=""></p>
+<p><img src="http://wx2.sinaimg.cn/mw690/006Fw6Kwly1g3x7kquznxj310k06yt9e.jpg" alt=""></p>
+<p><img src="http://wx4.sinaimg.cn/mw690/006Fw6Kwly1g3x7jr8u9uj30zk092403.jpg" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line"></span><br><span class="line">npm start</span><br></pre></td></tr></table></figure>
+<h3 id="添加-Antd-Mobile"><a href="#添加-Antd-Mobile" class="headerlink" title="添加 Antd Mobile"></a>添加 Antd Mobile</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install antd-mobile --save</span><br><span class="line"></span><br><span class="line">npm install babel-plugin-import</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">在 package.json 里添加插件</span><br><span class="line"></span><br><span class="line">&quot;plugins&quot;: [</span><br><span class="line">[</span><br><span class="line">    &quot;import&quot;,</span><br><span class="line">    &#123;</span><br><span class="line">     &quot;libraryName&quot;: &quot;antd-mobile&quot;,</span><br><span class="line">     &quot;style&quot;: &quot;css&quot;</span><br><span class="line">    &#125;</span><br><span class="line">]</span><br><span class="line">],</span><br></pre></td></tr></table></figure>
+<p>编辑 : Allen</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/06/android-crash/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -4019,384 +4188,6 @@ React 通过一种比传统的双向绑定略微繁琐的方法来实现反向�
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/01/html5 canvas分享/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/gaojihealth2.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="高济无线团队">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/01/html5 canvas分享/" itemprop="url">进击的前端开发（HTML5 动画介绍）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-01T13:28:39+08:00">
-                2019-04-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/04/01/html5 canvas分享/" class="leancloud_visitors" data-flag-title="进击的前端开发（HTML5 动画介绍）">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="HTML5-动画介绍"><a href="#HTML5-动画介绍" class="headerlink" title="HTML5 动画介绍"></a>HTML5 动画介绍</h2><h4 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h4><p>在 Web 开发中，经常需要实现各种动画效果，例如：移动、变形、透明度变化等，今天我们主要来讨论各种移动的实现。<br>在html5中常用的实现动画的方式主要有：Canvas，SVG Animation和CSS Transform,今天我们主要介绍的是Canvas</p>
-<h3 id="Canvas"><a href="#Canvas" class="headerlink" title="Canvas"></a>Canvas</h3><h4 id="2-Canvas简介"><a href="#2-Canvas简介" class="headerlink" title="2.Canvas简介"></a>2.Canvas简介</h4><p>canvas是html5提供的一个新的功能！至于作用，就是一个画布。然后画笔就是javascript。canvas的用途非常的广，特别是html5游戏以及数据可视化这两个方面，可以不用太厉害，但是必须要会基础的用法。但是以后对canvas的需求，肯定会越来越大。所以canvas很值得学习，而且学好canvas,就是很好的一个加分项。不过,‘&lt;’canvas’&gt;’元素本身并没有绘制能力（它仅仅是图形的容器),必须使用脚本来完成实际的绘图任务。getContext() 方法可返回一个对象，该对象提供了用于在画布上绘图的方法和属性。</p>
-<h4 id="3-常用函数"><a href="#3-常用函数" class="headerlink" title="3.常用函数"></a>3.常用函数</h4><h5 id="3-1基础函数"><a href="#3-1基础函数" class="headerlink" title="3.1基础函数"></a>3.1基础函数</h5><p>context.moveTo(x,y)<br>把画笔移动到x,y坐标，建立新的子路径。</p>
-<p>context.lineTo(x,y)<br>建立上一个点到x,y坐标的直线，如果没有上一个点，则等同moveTo(x,y)，把（x,y）添加到子路径中。</p>
-<p>context.stroke()<br>描绘子路径.</p>
-<p>beginPath()<br>清空子路径，一般用于开始路径的创建。在几次循环地创建路径的过程中，每次开始创建时都要调用beginPath函数。</p>
-<p>closePath()<br>如果当前子路径是打开的，就关闭它。否则把子路径中的最后一个点和路径中的第一个点连接起来，形成闭合回路。</p>
-<h5 id="3-2绘制图像"><a href="#3-2绘制图像" class="headerlink" title="3.2绘制图像"></a>3.2绘制图像</h5><p>context.drawImage(image,x,y)<br>把image图像绘制到画布上x,y坐标位置。</p>
-<p>context.drawImage(image,x,y,w,h)<br>把image图像绘制到画布上x,y坐标位置，图像的宽度是w,高度是h。</p>
-<p>context.drawImage(image,sx,sy,sw,sh,dx,dy,dw,dh)<br>截取image图像以sx,sy为左上角坐标，宽度为sw,高度为sh的一块矩形区域绘制到画布上以dx,dy坐标位置，图像宽度是dw,高度是dh。</p>
-<h5 id="3-3艺术文字"><a href="#3-3艺术文字" class="headerlink" title="3.3艺术文字"></a>3.3艺术文字</h5><p>context.fillText(text,x,y,[maxWidth])<br>在canvas上填充文字，text表示需要绘制的文字，x,y分别表示绘制在canvas上的横，纵坐标，最后一个参数可选，表示显示文字的最大宽度，防止文字显示溢出。</p>
-<p>context.strokeText(text,x,y,[maxWidth])<br>在canvas上描边文字，参数的意义同fillText</p>
-<h4 id="4-Canvas的简单应用"><a href="#4-Canvas的简单应用" class="headerlink" title="4.Canvas的简单应用"></a>4.Canvas的简单应用</h4><p>利用canvas绘画出如图所以的环形html5时钟，<br><img src="../html/48B21005-4DCF-4452-B74E-06A5D971918D.png" alt="avatar"></p>
-<p>主要函数：context.arc(x,y,r,sAngle,eAngle,counterclockwise);<br><img src="../html/56F4CD73-005D-4DAA-95A5-DABE4DE3026D.png" alt="avatar"></p>
-<p>主要代码如下：</p>
-<pre><code>function degToRad(degree){
-    var factor = Math.PI/180;
-    return degree*factor;
-}
-function renderTime(){
-    var now = new Date();
-    var today = now.toDateString();
-    var time = now.toLocaleTimeString();
-    var hrs = now.getHours();
-    var min = now.getMinutes();
-    var sec = now.getSeconds();
-    var mil = now.getMilliseconds();
-    var smoothsec = sec+(mil/1000);
-      var smoothmin = min+(smoothsec/60);
-
-    //Background
-    gradient = ctx.createRadialGradient(250, 250, 5, 250, 250, 300);
-    gradient.addColorStop(0, &quot;#03303a&quot;);
-    gradient.addColorStop(1, &quot;black&quot;);
-    ctx.fillStyle = gradient;
-    //ctx.fillStyle = &apos;rgba(00 ,00 , 00, 1)&apos;;
-    ctx.fillRect(0, 0, 500, 500);
-    //Hours
-    ctx.beginPath();
-    ctx.arc(250,250,200, degToRad(270), degToRad((hrs*30)-90));
-    ctx.stroke();
-    //Minutes
-    ctx.beginPath();
-    ctx.arc(250,250,170, degToRad(270), degToRad((smoothmin*6)-90));
-    ctx.stroke();
-    //Seconds
-    ctx.beginPath();
-    ctx.arc(250,250,140, degToRad(270), degToRad((smoothsec*6)-90));
-    ctx.stroke();
-    //Date
-    ctx.font = &quot;25px Helvetica&quot;;
-    ctx.fillStyle = &apos;rgba(00, 255, 255, 1)&apos;
-    ctx.fillText(today, 175, 250);
-    //Time
-    ctx.font = &quot;25px Helvetica Bold&quot;;
-    ctx.fillStyle = &apos;rgba(00, 255, 255, 1)&apos;;
-    ctx.fillText(time+&quot;:&quot;+mil, 175, 280);
-}
-</code></pre><h4 id="5-canvas动画实例"><a href="#5-canvas动画实例" class="headerlink" title="5.canvas动画实例"></a>5.canvas动画实例</h4><p>利用HTML5 Canvas技术实现的万花筒动画特效，动画开始时，逐渐生成一些随机颜色的矩形方块，然后就不停的旋转，就像万花筒一样，矩形方块越来越小。<br>如图：<br><img src="../html/ac3c8e80-d9c1-4dcc-9c55-ad373b06d5fb.png" alt="avatar"></p>
-<p>主要代码：</p>
-<pre><code>window.onload=function(){
-        var canvas = document.getElementById(&quot;canvas&quot;);
-        var context = canvas.getContext(&quot;2d&quot;);
-        var rects= [];
-        context.translate(200,200);
-        setInterval(function(){
-            context.clearRect(-200,-200,400,500);
-            for(var i=0;i&lt;rects.length;i++){
-                context.save();
-                //    旋转当前绘图
-                context.rotate(rects[i].angle * Math.PI / 180);
-                //    缩放当前绘图
-                context.scale(rects[i].scale,rects[i].scale);
-                context.beginPath();
-                context.fillStyle=rects[i].color;
-                context.rect(rects[i].len,rects[i].len,50,50);
-                context.fill();
-                //    返回之前保存过的路径状态和属性
-                context.restore();
-            }
-        },60);
-        setInterval(function(){
-            rects.push(createRect());
-        },1000);
-        setInterval(function(){
-            for ( var i = 0; i &lt; rects.length; i++) {
-                rects[i].len = rects[i].len -0.2;
-                if(rects[i].len &lt;= 0){
-                    rects.splice(i,1);
-                    continue;
-                }
-                rects[i].scale = rects[i].scale - 0.002;
-                if(rects[i].scale &lt;= 0.2){
-                    rects[i].scale = 0.2;
-                }
-                rects[i].angle = rects[i].angle+2;
-                if(rects[i].angle &gt;=360){
-                    rects[i].angle =0;
-                }
-
-            }
-        },60);
-    };
-
-function createRect(){
-    var rect = {
-            len:150,
-            scale:1,
-            angle:0,
-            color:&quot;rgb(&quot;+getRandom()+&quot;,&quot;+getRandom()+&quot;,&quot;+getRandom()+&quot;)&quot;
-    };
-    return rect;
-}
-function getRandom(){
-    return Math.floor(Math.random()*255);
-}
-</code></pre><blockquote>
-<p>setTimeout() 实现的动画和 requestAnimationFrame() 实现的动画的区别</p>
-</blockquote>
-<h4 id="6-THREE-JS-和Canvas"><a href="#6-THREE-JS-和Canvas" class="headerlink" title="6. THREE.JS 和Canvas"></a>6. THREE.JS 和Canvas</h4><h5 id="6-1-three-js是做什么的"><a href="#6-1-three-js是做什么的" class="headerlink" title="6.1 three.js是做什么的"></a>6.1 three.js是做什么的</h5><p>webGL基于光栅化的2D API，封装成了我们人类能看懂的 3D API。</p>
-<p>1.辅助我们导出了模型数据；</p>
-<p>2.自动生成了各种矩阵；</p>
-<p>3.生成了顶点着色器；</p>
-<p>4.辅助我们生成材质，配置灯光；</p>
-<p>5.根据我们设置的材质生成了片元着色器。</p>
-<blockquote>
-<p>开源地址：<a href="https://github.com/mrdoob/three.js" target="_blank" rel="noopener">https://github.com/mrdoob/three.js</a></p>
-</blockquote>
-<h5 id="6-2-three-js三大组件"><a href="#6-2-three-js三大组件" class="headerlink" title="6.2 three.js三大组件"></a>6.2 three.js三大组件</h5><h6 id="渲染器（Renderer）"><a href="#渲染器（Renderer）" class="headerlink" title="渲染器（Renderer）"></a>渲染器（Renderer）</h6><p>渲染器将和Canvas元素进行绑定</p>
-<pre><code>var renderer = new THREE.WebGLRenderer({
-    canvas: document.getElementById(‘mainCanvas’)
-});
-</code></pre><p>如果想要Three.js生成Canvas元素，在HTML中就不需要定义canvas，在js中可以这样写：</p>
-<pre><code>var renderer = new THREE.WebGLRenderer();
-renderer.setSize(400,300);
-document.getElementsByTagName(‘body’[0].appendChild(renderer.domElement);
-renderer.setClearColor(0x000000);
-</code></pre><h6 id="场景（Scene）"><a href="#场景（Scene）" class="headerlink" title="场景（Scene）"></a>场景（Scene）</h6><p>　在Three.js中添加的物体都是添加到场景中的。在程序最开始的时候进行实例化，然后将物体添加到场景中即可。</p>
-<pre><code>var scene = new THREE.Scene();
-</code></pre><h6 id="照相机（Camera）"><a href="#照相机（Camera）" class="headerlink" title="照相机（Camera）"></a>照相机（Camera）</h6><p>webGL和Three.js使用的坐标系是右手坐标系：<br><img src="../html/899901-20160725133656700-2000808953.png" alt="avatar"><br>相机分正投影相机和透视投影相机。这里先定义一直透视投影的照相机</p>
-<pre><code>var camera = new THREE.PerspectiveCamera(45,4/3,1,1000);
-//四个参数分别对应：视角、近处的裁面的距离、远处的裁面的距离、实际窗口的纵横比（后面会详细讨论）
-camera.position.set(0,0,5);//设置相机位置
-scene.add(camera);//添加到场景中
-</code></pre><h6 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h6><p>在定义了场景中的物体，设置好的照相机之后，渲染器就知道如何渲染出二维的结果了。调用渲染器的渲染函数，就能使其渲染一次了</p>
-<pre><code>renderer.render(scene, camera);
-</code></pre><h5 id="6-3-three-js案例"><a href="#6-3-three-js案例" class="headerlink" title="6.3 three.js案例"></a>6.3 three.js案例</h5><pre><code>&lt;!DOCTYPE html&gt;
-
-&lt;html&gt;
-
-&lt;head&gt;
-
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-
-&lt;title&gt;3.js测试一&lt;/title&gt;
-
-&lt;/head&gt;
-
-&lt;body onload=&quot;init()&quot;&gt;
-
-&lt;canvas id=&quot;mainCanvas&quot; width=&quot;400px&quot; height=&quot;300px&quot; &gt;&lt;/canvas&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;js/three.min.js&quot;&gt;&lt;/script&gt;&lt;!--路径改成你的--&gt;
-
-    &lt;script type=&quot;text/javascript&quot;&gt;
-
-        function init() {
-
-            // renderer 渲染器
-
-            var renderer = new THREE.WebGLRenderer({
-
-                canvas: document.getElementById(&apos;mainCanvas&apos;)　　//绑定canvas
-
-            });
-
-            renderer.setClearColor(0x000000); // black 
-
-
-
-            // scene 场景
-
-            var scene = new THREE.Scene();　　//实例化场景
-
-
-
-            // camera 照相机
-
-            var camera = new THREE.PerspectiveCamera(45, 4 / 3, 1, 1000);　　//透视投影相机参数设置
-
-            camera.position.set(0, 0, 5);　　//相机位置设置
-
-            scene.add(camera);　　//添加到场景
-
-
-
-            // a cube in the scene 创建的物体
-
-            var cube = new THREE.Mesh(new THREE.CubeGeometry(1, 2, 3),　　//创建网格，参数一：几何体（立方体）
-
-                    new THREE.MeshBasicMaterial({　　//参数二：材质（网格基础材质）
-
-                        color: 0xff0000　　//设置颜色
-
-                    })
-
-            );
-
-            scene.add(cube);　　//添加到场景
-
-
-
-            // render 渲染
-
-            renderer.render(scene, camera);
-
-        }
-
-    &lt;/script&gt;
-
-&lt;/body&gt;
-
-&lt;/html&gt;
-</code></pre><blockquote>
-<p>three.js初始化方法为init()</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -4449,7 +4240,7 @@ scene.add(camera);//添加到场景中
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -4548,7 +4339,7 @@ scene.add(camera);//添加到场景中
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共33.7k字</span>
+  <span class="post-count">博客全站共33.8k字</span>
 </div>
 
         
